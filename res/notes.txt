@@ -1,4 +1,0 @@
-react setup:
-https://www.youtube.com/watch?v=PeKq_cGZcnY
-
-used firebase (jacobmckennawebsite)

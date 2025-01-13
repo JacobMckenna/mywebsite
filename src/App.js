@@ -1,7 +1,6 @@
 import React from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import './App.css';
-import profilePhoto from './profile.jpg'; // Ensure the profile image is in the public or src folder
 
 function App() {
   return (
@@ -21,7 +20,7 @@ function Home() {
         </Link>
       </header>
       <div className="profile-container">
-        <img src={profilePhoto} alt="Profile" className="profile-photo" />
+        <img src="https://raw.githubusercontent.com/JacobMckenna/mywebsite/refs/heads/master/src/profile.jpg?token=GHSAT0AAAAAAC5IVD5HIFHBZFEN7LG7BWQ6Z4FPC2A" alt="Profile" className="profile-photo" />
         <h1 className="name">Jacob Mckenna</h1>
         <p className="description">
           Yup, that's me. Welcome to my home sweet home.

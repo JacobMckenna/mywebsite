@@ -1,0 +1,24 @@
+.header {
+    display: flex;
+    justify-content: flex-end;  /* Adds space between buttons */
+    padding: 10px 20px;
+    background-color: #282c34;
+    border-radius: 5px;
+  }
+  
+  .special-button {
+    background-color: #61dafb;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 10px;  /* Adds space between the buttons */
+  }
+  
+  .special-button:hover {
+    background-color: #21a1f1;
+  }
+  

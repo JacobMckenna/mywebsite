@@ -9,6 +9,9 @@ function Header() {
         <Link to="/">
             <button className="special-button">Home</button>
         </Link>
+        <Link>
+            <button className="special-button">Games</button>
+        </Link>
         <Link to="/sarah">
             <button className="special-button">Special</button>
         </Link>

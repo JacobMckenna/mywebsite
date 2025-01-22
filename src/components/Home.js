@@ -1,4 +1,5 @@
 import Header from './Header'; // Import the Header component
+import Footer from './Footer';
 import '../styles/Home.css';
 
 
@@ -22,6 +23,7 @@ function Home() {
             className="hot-chocolate-gif"
           />
         </div>
+        <Footer />
       </div>
     );
   }

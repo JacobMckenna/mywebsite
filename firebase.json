@@ -10,6 +10,10 @@
       {
         "source": "**",
         "destination": "/index.html"
+      },
+      {
+        "source": "games.**",
+        "destination": "/games.html"
       }
     ]
   }

@@ -1,0 +1,63 @@
+/* General App Styles */
+.app-container {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    color: #333;
+  }
+  
+  .header {
+    margin-bottom: 20px;
+  }
+  
+  .footer {
+    margin-top: 20px;
+    color: #777;
+  }
+  
+  /* Button Styles */
+  .button-container {
+    margin-top: 50px;
+  }
+  
+  .massive-red-button {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(145deg, #ff4b4b, #ff0000);
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+  }
+  
+  .massive-red-button:hover {
+    background: linear-gradient(145deg, #ff6b6b, #ff2a2a);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .massive-red-button:active {
+    transform: scale(0.95);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Counter Styles */
+  .global-counter-text {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  .global-counter-number {
+    font-size: 48px; /* Larger font size for the number */
+    font-weight: bold; /* Bold for emphasis */
+    color: #d32f2f; /* Bright red for attention */
+  }
+  
+  .session-text {
+    font-size: 18px;
+    margin-top: 10px;
+    color: gray;
+  }
+  

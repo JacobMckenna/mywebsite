@@ -20,8 +20,8 @@ function Header() {
         >
             <button className="special-button">Games</button>
         </a>
-        <Link to="/sarah">
-            <button className="special-button">Special</button>
+        <Link to="/button">
+            <button className="special-button">The Button</button>
         </Link>
     </header>
   );

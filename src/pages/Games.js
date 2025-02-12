@@ -1,5 +1,5 @@
 
-import Footer from './Footer';
+import Footer from '../components/Footer';
 import '../styles/Home.css';
 
 

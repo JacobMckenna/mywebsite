@@ -1,0 +1,72 @@
+
+.projects-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.projects-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scaling and shadow */
+}
+
+.project-card a {
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Ensures the text color matches the parent */
+}
+
+.project-name, .project-description {
+    margin: 0;
+    color: #333; /* Optional: sets text color for project name and description */
+    text-decoration: none; /* Ensure no underline even if it's inside a link */
+}
+
+
+.project-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project-name {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    text-decoration: none; /* Ensures no underline */
+    color: inherit; /* Ensures the text color matches the parent */
+}
+
+.project-description {
+    font-size: 1rem;
+    color: #555;
+}
+
+
+
+/* Add hover effect for enlarging the project cards */
+
+
+.project-card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhance the shadow on hover */
+}

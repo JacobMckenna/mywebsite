@@ -3,7 +3,19 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
+  background-color: #90A4AE;
+}
+
+.section-container {
+  max-width: 60%;
+  margin: 0 auto;
+  margin-bottom: 5%;;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  background-color: #ECEFF1;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding-bottom: 5%;
 }
 
 .app-container {
@@ -16,21 +28,21 @@ body {
 }
 
 .profile-photo {
-  width: 150px;
-  height: 150px;
+  width: 20%;
+  height: 20%;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .name {
-  font-size: 24px;
+  font-size: 200%;
   margin: 20px 0 10px;
   color: #333;
 }
 
 .description {
-  font-size: 16px;
+  font-size: 100%;
   color: #666;
   margin: 0 20px;
 }

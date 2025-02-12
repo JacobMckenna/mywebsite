@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';  // Import useNavigate
-import '../styles/header.css';  // Assuming you might have a specific style for the header
+import { Link } from 'react-router-dom';
+import '../styles/header.css';
 
 function Header() {
 
@@ -9,7 +9,7 @@ function Header() {
         <Link to="/">
             <button className="special-button">Home</button>
         </Link>
-        <a
+        {/* <a
             href={
                 window.location.hostname === "localhost"
                     ? `http://games.localhost:${window.location.port}` // Replace with the local subdomain's port if needed
@@ -19,10 +19,10 @@ function Header() {
             rel="noopener noreferrer"
         >
             <button className="special-button">Games</button>
-        </a>
-        <Link to="/button">
+        </a> */}
+        {/* <Link to="/button">
             <button className="special-button">The Button</button>
-        </Link>
+        </Link> */}
     </header>
   );
 }

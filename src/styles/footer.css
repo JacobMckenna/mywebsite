@@ -1,32 +1,30 @@
-  .footer {
-    display: flex;
-    justify-content: flex;  /* Adds space between buttons */
-    padding: 10px 20px;
-    background-color: #d5deee;
-    border-radius: 5px;
-  }
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
 
+.social-icons {
+  display: flex;
+  gap: 20px; /* Space between icons */
+}
 
-  .footer .dont-click-link {
-    margin-left: auto; /* Push it to the far left */
-    margin-left: 10px;
-    text-decoration: none;
-    color: #383847;
-    font-weight: bold;
-    cursor: pointer;
-  }
+.social-icon {
+  font-size: 2rem;
+  color: #333;
+  text-decoration: none; /* Remove underlines from links */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
 
-  .footer .dont-click-link:hover {
-    text-decoration: underline;
-  }
+.social-icon:hover {
+  transform: scale(1.2); /* Slightly enlarge icon on hover */
+  color: #007bff; /* Change color on hover */
+}
 
-
-  .pagebreak {
-    border: none;
-    height: 2px;
-    background-color: #c0cadf;
-    margin-top: 10%;
-    margin-bottom: 1%;
-    width: 100%; /* Ensures it spans the entire width */
-  }
-  
+/* Optional: Add a page break style */
+.pagebreak {
+  margin: 20px 0;
+  border: none;
+  border-top: 2px solid #333;
+}

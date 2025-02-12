@@ -18,9 +18,19 @@
       "sizes": "512x512"
     },
     {
-      "src": "profile.jpg",
-      "type": "image/jpg",
-      "sizes": "1980x1980"
+      "src": "gamesicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "games192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "games512.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ],
   "start_url": ".",

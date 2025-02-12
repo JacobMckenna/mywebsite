@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import '../styles/SarahPage.css';
-import Header from './Header'; // Import the Header component
-import Footer from './Footer'; // Import the Header component
+import '../styles/SpecialPage.css';
+import Header from '../components/Header'; // Import the Header component
+import Footer from '../components/Footer'; // Import the Header component
 
-function SarahPage() {
+function SpecialPage() {
   const [board, setBoard] = React.useState(
     Array(6)
       .fill(null)
@@ -313,4 +313,4 @@ function SarahPage() {
   );
 }
 
-export default SarahPage;
+export default SpecialPage;

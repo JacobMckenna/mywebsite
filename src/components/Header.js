@@ -12,7 +12,7 @@ function Header() {
         <a
             href={
                 window.location.hostname === "localhost"
-                    ? `http://games.localhost:${window.location.port}` // Replace with the local subdomain's port if needed
+                    ? `http://games.localhost:${window.location.port}`
                     : `https://games.${window.location.hostname}`
             }
             // target="_blank"

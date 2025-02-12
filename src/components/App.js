@@ -1,9 +1,10 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
-import SpecialPage from "../pages/SpecialPage";
-import Home from "../pages/Home";
-import TheButton from "../pages/TheButton";
-import Games from "../pages/Games";
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import SarahPage from './SarahPage';
+import Home from './Home';
+import TheButton from './TheButton';
+import Games from './Games';
+
 
 function App() {
   if (window.location.host.split(".")[0] === "games") {
@@ -19,10 +20,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/button" element={<TheButton />} />
-        <Route path="/sarah" element={<SpecialPage />} />
+        <Route path="/sarah" element={<SarahPage />} />
       </Routes>
     );
   }
+  
 }
 
 export default App;

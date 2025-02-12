@@ -1,5 +1,5 @@
-import Header from '../components/Header'; // Import the Header component
-import Footer from '../components/Footer';
+import Header from './Header'; // Import the Header component
+import Footer from './Footer';
 import React, { useState } from "react";
 
 import "../styles/TheButton.css"; // Import the CSS file

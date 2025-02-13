@@ -5,13 +5,13 @@ function Education() {
     const educationList = [
         {
             institution: "University of Guelph",
-            degree: "Bachelor of Science in Computer Science",
+            degree: "Bachelor of Computing, Honours Major Computer Science, Minor in Applied Geomatics",
             years: "2021 - 2026",
             image: process.env.PUBLIC_URL + '/uoguelph.jpg'
         },
         {
             institution: "Preston High School",
-            degree: "High School Diploma",
+            degree: "Ontario Secondary School Diploma, Ontario Scholar",
             years: "2017 - 2021",
             image: process.env.PUBLIC_URL + '/prestonhs.jpg'
         }

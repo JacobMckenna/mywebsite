@@ -1,9 +1,9 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import SpecialPage from '../pages/SpecialPage';
-import TheButton from '../pages/TheButton';
-import Games from '../pages/Games';
-import Portfolio from '../pages/Portfolio';
+import SpecialPage from '../pages/SpecialPage.js';
+import TheButton from '../pages/TheButton.js';
+import Games from '../pages/Games.js';
+import Portfolio from '../pages/Portfolio.js';
 
 
 function App() {

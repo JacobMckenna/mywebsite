@@ -1,10 +1,10 @@
-import Header from '../components/Header'; 
-import Footer from '../components/Footer';
+import Header from '../components/Header.js'; 
+import Footer from '../components/Footer.js';
 import '../styles/Home.css';
-import Welcome from '../components/Welcome';
-import Projects from '../components/Projects';
-import Education from '../components/Education';
-import Skills from '../components/Skills';
+import Welcome from '../components/Welcome.js';
+import Projects from '../components/Projects.js';
+import Education from '../components/Education.js';
+import Skills from '../components/Skills.js';
 
 
 function Portfolio() {

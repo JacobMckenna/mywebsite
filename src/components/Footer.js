@@ -25,7 +25,7 @@ function Footer() {
             rel="noopener noreferrer"
             aria-label="LinkedIn"
           >
-            <i class="devicon-linkedin-plain colored"></i>
+            <i className="devicon-linkedin-plain colored"></i>
           </a>
           <a
             href="https://github.com/JacobMckenna"
@@ -34,7 +34,7 @@ function Footer() {
             rel="noopener noreferrer"
             aria-label="GitHub"
           >
-            <i class="devicon-github-original-wordmark colored"></i>
+            <i className="devicon-github-original-wordmark colored"></i>
           </a>
         </div>
       </footer>

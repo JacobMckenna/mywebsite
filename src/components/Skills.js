@@ -10,57 +10,57 @@ const Skills = () => {
       <div className="skills-list">
         <div className="skill-item">
           <h3 className="skill-name">Languages</h3>
-          <div class="skill-icon">
-            <i class="devicon-java-plain colored"></i>
-            <i class="devicon-python-plain colored"></i>
-            <i class="devicon-c-plain colored"></i>
-            <i class="devicon-cplusplus-plain colored"></i>
-            <i class="devicon-csharp-plain colored"></i>
-            <i class="devicon-mysql-original colored"></i>
-            <i class="devicon-postgresql-plain colored"></i>
-            <i class="devicon-sqlite-plain colored"></i>
-            <i class="devicon-javascript-plain colored"></i>
-            <i class="devicon-html5-plain colored"></i>
-            <i class="devicon-css3-plain colored"></i>
-            <i class="devicon-r-plain colored"></i>
+          <div className="skill-icon">
+            <i className="devicon-java-plain colored"></i>
+            <i className="devicon-python-plain colored"></i>
+            <i className="devicon-c-plain colored"></i>
+            <i className="devicon-cplusplus-plain colored"></i>
+            <i className="devicon-csharp-plain colored"></i>
+            <i className="devicon-mysql-original colored"></i>
+            <i className="devicon-postgresql-plain colored"></i>
+            <i className="devicon-sqlite-plain colored"></i>
+            <i className="devicon-javascript-plain colored"></i>
+            <i className="devicon-html5-plain colored"></i>
+            <i className="devicon-css3-plain colored"></i>
+            <i className="devicon-r-plain colored"></i>
           </div>
         </div>
         
         <div className="skill-item">
           <h3 className="skill-name">Frameworks</h3>
-          <div class="skill-icon">
-            <i class="devicon-react-original colored"></i>
-            <i class="devicon-spring-original colored"></i>
-            <i class="devicon-nodejs-plain colored"></i>
-            <i class="devicon-flask-original colored"></i>
-            <i class="devicon-junit-plain colored"></i>
-            <i class="devicon-flutter-plain colored"></i>
-            <i class="devicon-bootstrap-plain colored"></i>
-            <i class="devicon-tailwindcss-original colored"></i>
+          <div className="skill-icon">
+            <i className="devicon-react-original colored"></i>
+            <i className="devicon-spring-original colored"></i>
+            <i className="devicon-nodejs-plain colored"></i>
+            <i className="devicon-flask-original colored"></i>
+            <i className="devicon-junit-plain colored"></i>
+            <i className="devicon-flutter-plain colored"></i>
+            <i className="devicon-bootstrap-plain colored"></i>
+            <i className="devicon-tailwindcss-original colored"></i>
           </div>
         </div>
         
         <div className="skill-item">
           <h3 className="skill-name">Dev Tools</h3>
-          <div class="skill-icon">
-            <i class="devicon-git-plain colored"></i>
-            <i class="devicon-githubactions-plain colored"></i>
-            <i class="devicon-docker-plain colored"></i>
-            <i class="devicon-firebase-plain colored"></i>
-            <i class="devicon-vscode-plain colored"></i>
-            <i class="devicon-googlecloud-plain colored"></i>
-            <i class="devicon-swagger-plain colored"></i>
+          <div className="skill-icon">
+            <i className="devicon-git-plain colored"></i>
+            <i className="devicon-githubactions-plain colored"></i>
+            <i className="devicon-docker-plain colored"></i>
+            <i className="devicon-firebase-plain colored"></i>
+            <i className="devicon-vscode-plain colored"></i>
+            <i className="devicon-googlecloud-plain colored"></i>
+            <i className="devicon-swagger-plain colored"></i>
           </div>
         </div>
         
         <div className="skill-item">
           <h3 className="skill-name">Libraries</h3>
-          <div class="skill-icon">
-            <i class="devicon-pandas-plain colored"></i>
-            <i class="devicon-numpy-plain colored"></i>
-            <i class="devicon-sqlalchemy-plain colored"></i>
-            <i class="devicon-selenium-original colored"></i>
-            <i class="devicon-matplotlib-plain colored"></i>
+          <div className="skill-icon">
+            <i className="devicon-pandas-plain colored"></i>
+            <i className="devicon-numpy-plain colored"></i>
+            <i className="devicon-sqlalchemy-plain colored"></i>
+            <i className="devicon-selenium-original colored"></i>
+            <i className="devicon-matplotlib-plain colored"></i>
           </div>
         </div>
       </div>

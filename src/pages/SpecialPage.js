@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/SarahPage.css';
-import Header from '../components/Header'; 
-import Footer from '../components/Footer'; 
+import Header from '../components/Header.js'; 
+import Footer from '../components/Footer.js'; 
 
 function SarahPage() {
   const [board, setBoard] = React.useState(

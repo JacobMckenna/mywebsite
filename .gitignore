@@ -95,8 +95,6 @@ node_modules/
 # dotenv environment variables file
 .env
 
-/.github
-
 
 # Created by https://www.toptal.com/developers/gitignore/api/git,firebase,react
 # Edit at https://www.toptal.com/developers/gitignore?templates=git,firebase,react
@@ -104,11 +102,9 @@ node_modules/
 ### Firebase ###
 .idea
 **/node_modules/*
-**/.firebaserc
 
 ### Firebase Patch ###
 .runtimeconfig.json
-.firebase/
 
 ### Git ###
 # Created by git for backups. To disable backups in Git:

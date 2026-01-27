@@ -1,14 +1,26 @@
 # public/py/ttt_ai.py
-# Bitboard: 9 bits for X, 9 bits for O (cells 0..8)
-# Transposition table: dict keyed by (x_bits, o_bits, turn)
+# ✅ FIX: Use the SAME square/bit ordering as your ORIGINAL game (Button/Board):
+#   index = x + y*3  (row-major)
+#   move mask = 1 << index
+#
+# Your React board array is also row-major (0..8). The only mismatch was
+# the bit order in this Pyodide AI file.
+#
+# IMPORTANT: This assumes your React side is now using:
+#   bit = 1 << i   (NOT 1 << (8 - i))
+# in toBitboards().
+#
+# If you haven't changed React yet, do that first (otherwise you'll still have mismatch).
 
 WIN_MASKS = [
-    0b111000000, 0b000111000, 0b000000111,  # rows
-    0b100100100, 0b010010010, 0b001001001,  # cols
+    0b000000111, 0b000111000, 0b111000000,  # rows (top -> bottom)
+    0b001001001, 0b010010010, 0b100100100,  # cols (left -> right)
     0b100010001, 0b001010100               # diags
 ]
 
-TT = {}  # (x_bits, o_bits, turn) -> (score, best_move)
+FULL_MASK = 0b111111111  # all 9 cells occupied
+
+TT = {}  # (x_bits, o_bits, turn) -> (score_from_X_perspective, best_move_index)
 
 def _is_win(bits: int) -> bool:
     for m in WIN_MASKS:
@@ -17,64 +29,71 @@ def _is_win(bits: int) -> bool:
     return False
 
 def _is_full(x_bits: int, o_bits: int) -> bool:
-    return (x_bits | o_bits) == 0b111111111
+    return ((x_bits | o_bits) & FULL_MASK) == FULL_MASK
 
 def _moves(x_bits: int, o_bits: int):
-    occ = x_bits | o_bits
+    occ = (x_bits | o_bits) & FULL_MASK
     for i in range(9):
-        if (occ & (1 << (8 - i))) == 0:
+        # ✅ bit i corresponds to cell index i
+        if (occ & (1 << i)) == 0:
             yield i
 
-def _place(bits: int, move: int) -> int:
-    # move 0..8 => set bit (8-move)
-    return bits | (1 << (8 - move))
+def _place(bits: int, move_index: int) -> int:
+    # ✅ move_index 0..8 -> set bit (1 << move_index)
+    return bits | (1 << move_index)
 
-def _minimax(x_bits: int, o_bits: int, turn: str, alpha: int, beta: int):
-    # turn: 'X' or 'O' = side to move (bot can be either, caller decides)
+def _minimax(x_bits: int, o_bits: int, turn: str):
+    """
+    Returns (score, best_move_index)
+    Score is ALWAYS from X perspective:
+      X win: +1
+      O win: -1
+      tie: 0
+
+    turn is 'X' or 'O' (side to move).
+    """
     key = (x_bits, o_bits, turn)
     if key in TT:
         return TT[key]
 
+    # terminal
     if _is_win(x_bits):
-        TT[key] = (1, None)   # X win
+        TT[key] = (1, -1)
         return TT[key]
     if _is_win(o_bits):
-        TT[key] = (-1, None)  # O win
+        TT[key] = (-1, -1)
         return TT[key]
     if _is_full(x_bits, o_bits):
-        TT[key] = (0, None)   # tie
+        TT[key] = (0, -1)
         return TT[key]
 
-    if turn == 'X':
+    if turn == "X":
         best_score = -2
-        best_move = None
+        best_move = -1
         for mv in _moves(x_bits, o_bits):
-            score, _ = _minimax(_place(x_bits, mv), o_bits, 'O', alpha, beta)
+            score, _ = _minimax(_place(x_bits, mv), o_bits, "O")
             if score > best_score:
                 best_score, best_move = score, mv
-            alpha = max(alpha, best_score)
-            if beta <= alpha:
-                break
+                if best_score == 1:  # can't beat a forced win
+                    break
         TT[key] = (best_score, best_move)
         return TT[key]
     else:
         best_score = 2
-        best_move = None
+        best_move = -1
         for mv in _moves(x_bits, o_bits):
-            score, _ = _minimax(x_bits, _place(o_bits, mv), 'X', alpha, beta)
+            score, _ = _minimax(x_bits, _place(o_bits, mv), "X")
             if score < best_score:
                 best_score, best_move = score, mv
-            beta = min(beta, best_score)
-            if beta <= alpha:
-                break
+                if best_score == -1:  # O found forced win (bad for X)
+                    break
         TT[key] = (best_score, best_move)
         return TT[key]
 
 def best_move(x_bits: int, o_bits: int, turn: str) -> int:
-    # returns 0..8
-    score, mv = _minimax(x_bits, o_bits, turn, -2, 2)
-    # If no mv (terminal), return -1
-    return -1 if mv is None else mv
+    # returns move index 0..8 in the SAME indexing as your React board array
+    _, mv = _minimax(int(x_bits), int(o_bits), str(turn))
+    return int(mv)
 
 def reset_tt():
     TT.clear()

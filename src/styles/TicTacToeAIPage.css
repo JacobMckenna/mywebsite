@@ -1,0 +1,303 @@
+/* Use the same font as the rest of the site */
+.ttt-wrap, .ttt-card, .ttt-card * {
+    font-family: var(--font);
+  }
+  
+  /* Let the global body background show through */
+  .ttt-wrap {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    padding: 28px 16px;
+    background: transparent;
+  }
+  
+  /* Main container matches your site panels */
+  .ttt-card {
+    width: 100%;
+    max-width: 980px;
+    background: var(--bg-2);
+    border: 1px solid var(--border);
+    border-radius: var(--r-lg);
+    padding: 20px;
+    color: var(--text);
+  }
+  
+  /* Top bar */
+  .ttt-topbar {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 12px;
+  }
+  
+  .backbtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 12px;
+    border-radius: var(--r-md);
+    border: 1px solid var(--border);
+    background: var(--bg-3);
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 800;
+  }
+  .backbtn:hover { border-color: var(--border-strong); }
+  
+  /* Header */
+  .ttt-header {
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .ttt-header h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 0.2px;
+  }
+  
+  .sub {
+    margin: 8px 0 0;
+    color: var(--text-muted);
+    max-width: 560px;
+  }
+  
+  /* GitHub link button (secondary) */
+  .header-actions { margin-top: 12px; }
+  
+  .linkbtn {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 12px;
+    border-radius: var(--r-md);
+    border: 1px solid var(--border);
+    background: var(--bg-3);
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 800;
+  }
+  .linkbtn:hover { border-color: var(--brand); }
+  
+  /* Stats */
+  .stats {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .stat {
+    position: relative;
+    min-width: 140px;
+    padding: 12px 12px 12px 16px;
+    border-radius: var(--r-md);
+    border: 1px solid var(--border);
+    background: var(--bg-3);
+    overflow: hidden;
+  }
+  
+  .stat::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 6px;
+  }
+  
+  /* ❌ Bot Wins = bad for user */
+  .stat.bot-wins::before { background: #ef4444; }
+  
+  /* ✅ Bot Losses = good for user */
+  .stat.bot-losses::before { background: #22c55e; }
+  
+  /* 😐 Ties = neutral */
+  .stat.ties::before { background: #f59e0b; }
+  
+  .stat .label {
+    font-size: 12px;
+    color: var(--text-muted);
+    font-weight: 800;
+  }
+  
+  .stat .value {
+    margin-top: 6px;
+    font-size: 26px;
+    font-weight: 900;
+    color: var(--text);
+  }
+  
+  /* Controls row */
+  .ttt-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  
+  /* "You are" pill */
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: var(--bg-3);
+  }
+  
+  .youare-label {
+    font-weight: 900;
+    color: var(--text);
+  }
+  
+  /* Segmented buttons */
+  .chip {
+    border: 1px solid var(--border);
+    background: var(--bg-2);
+    color: var(--text);
+    padding: 7px 12px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-weight: 900;
+    transition: transform 80ms ease, border-color 120ms ease;
+  }
+  
+  .chip:hover { border-color: var(--brand); }
+  .chip:active { transform: translateY(1px); }
+  
+  .chip.active {
+    background: var(--brand);
+    border-color: transparent;
+    color: #fff;
+  }
+  
+  /* Primary button uses your theme */
+  .btn {
+    border: none;
+    background: var(--brand);
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: var(--r-md);
+    cursor: pointer;
+    font-weight: 900;
+  }
+  
+  .btn:hover { filter: brightness(1.05); }
+  .btn:active { transform: translateY(1px); }
+  
+  .btn:disabled, .chip:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+  }
+  
+  /* Status */
+  .status {
+    margin: 16px 0 14px;
+    padding: 12px 14px;
+    border-radius: var(--r-md);
+    border: 1px solid var(--border);
+    background: var(--bg-3);
+    font-weight: 900;
+    text-align: center;
+  }
+  
+  .status-ready { border-left: 6px solid var(--brand); }
+  .status-busy  { border-left: 6px solid var(--brand); }
+  .status-done  { border-left: 6px solid var(--brand); }
+  .status-error { border-left: 6px solid #ef4444; }
+  
+  /* Board */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 132px);
+    gap: 12px;
+    justify-content: center;
+    padding: 12px 0 6px;
+  }
+  
+  .cell {
+    height: 120px;
+    width: 132px;
+    border-radius: var(--r-md);
+    border: 1px solid var(--border);
+    background: var(--bg-2);
+    color: var(--text);
+    font-size: 56px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: border-color 120ms ease, transform 80ms ease;
+  }
+  
+  .cell:hover { border-color: var(--brand); }
+  .cell:active { transform: translateY(1px); }
+  
+  .cell:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+  }
+  
+  .cell.filled {
+    cursor: default;
+    box-shadow:
+      inset 0 0 0 1px rgba(255,255,255,0.04),
+      0 6px 18px rgba(0,0,0,0.4);
+  }
+  
+  .cell.filled:hover { border-color: var(--border); }
+  
+  /* X/O colors + shadows */
+  .cell.X { color: #ef4444; }
+  .cell.O { color: #e5e7eb; }
+  
+  .cell.X,
+  .cell.O {
+    text-shadow:
+      0 1px 2px rgba(0,0,0,0.6),
+      0 6px 14px rgba(0,0,0,0.45);
+  }
+  
+  /* ✅ Winning cells highlight */
+  .cell.win {
+    border-color: var(--brand);
+    background: rgba(225, 6, 0, 0.12);
+    box-shadow:
+      inset 0 0 0 2px rgba(225, 6, 0, 0.28),
+      0 10px 26px rgba(0,0,0,0.45);
+  }
+  
+  .cell.win.X,
+  .cell.win.O {
+    text-shadow:
+      0 2px 3px rgba(0,0,0,0.65),
+      0 12px 22px rgba(0,0,0,0.55);
+  }
+  
+  /* ✅ Tie feedback */
+  .grid.tie {
+    animation: tiePulse 650ms ease;
+  }
+  
+  @keyframes tiePulse {
+    0%   { transform: scale(1); }
+    35%  { transform: scale(1.015); }
+    100% { transform: scale(1); }
+  }
+  
+  /* Mobile */
+  @media (max-width: 520px) {
+    .grid {
+      grid-template-columns: repeat(3, minmax(86px, 1fr));
+    }
+    .cell {
+      width: 100%;
+      height: 96px;
+      font-size: 46px;
+    }
+  }
+  

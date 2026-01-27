@@ -1,56 +1,24 @@
-/* homeAndApp.css */
-
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #90A4AE;
-}
-
 .section-container {
   max-width: 60%;
-  margin: 0 auto;
-  margin-bottom: 5%;;
+  margin: 0 auto 5%;
   padding: 2rem;
-  font-family: Arial, sans-serif;
-  background-color: #ECEFF1;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding-bottom: 5%;
-}
-
-.app-container {
-  text-align: center;
-  padding: 20px;
-}
-
-.profile-container {
-  margin-top: 50px;
+  background: var(--bg-2);
+  border-radius: var(--r-lg);
+  border: 1px solid var(--border);
 }
 
 .profile-photo {
   width: 20%;
-  height: 20%;
   border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 2px solid var(--brand);
 }
 
 .name {
-  font-size: 200%;
+  font-size: 2rem;
   margin: 20px 0 10px;
-  color: #333;
+  color: var(--text);
 }
 
 .description {
-  font-size: 100%;
-  color: #666;
-  margin: 0 20px;
-}
-
-.hot-chocolate-gif {
-  margin-top: 20px;
-  width: 200px;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: var(--text-muted);
 }

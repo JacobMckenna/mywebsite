@@ -1,13 +1,3 @@
-.skills-container {
-  max-width: 60%;
-  margin: 0 auto;
-  padding: 2rem;
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding-bottom: 5%;
-}
 
 .skills-title {
   text-align: center;
@@ -29,19 +19,6 @@
 
 
 
-/* Individual skill boxes */
-.skill-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: top; /* Centers content */
-  background-color: #fff;
-  border-radius: 8px;
-  padding: 1rem;
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 100%;
-}
 
 /* Ensures icons fit inside without breaking layout */
 .skill-icon {
@@ -55,12 +32,6 @@
   padding: 10px;
 }
 
-/* Hover effect */
-.skill-container {
-  position: relative;
-  display: inline-block;
-  padding: 1rem;
-}
 
 .skill-text {
   position: absolute;
@@ -77,6 +48,21 @@
   pointer-events: none;
   
 }
+.skills-container {
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 2rem;
+  background: var(--bg-2);
+  border-radius: var(--r-lg);
+  border: 1px solid var(--border);
+}
+
+.skill-item {
+  background: var(--bg-3);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+}
+
 
 .skill-container:hover .skill-text {
   opacity: 1;

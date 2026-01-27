@@ -2,7 +2,7 @@ import Header from '../components/Header.js';
 import Footer from '../components/Footer.js';
 import '../styles/Home.css';
 import Welcome from '../components/Welcome.js';
-import Projects from '../components/Projects.js';
+import Projects from '../components/Projects';
 import Education from '../components/Education.js';
 import Skills from '../components/Skills.js';
 

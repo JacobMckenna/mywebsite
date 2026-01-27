@@ -1,72 +1,153 @@
-
 .projects-container {
     text-align: center;
-    padding: 20px;
-    background-color: #f5f5f5;
-}
-
-.title {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-.description {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-.projects-grid {
-    display: flex;
+    padding: 42px 20px;
+    background: transparent;
+  }
+  
+  .projects-title {
+    font-size: 2.6rem;
+    margin: 0 0 8px;
+    font-weight: 900;
+    letter-spacing: 0.4px;
+    color: var(--text);
+  }
+  
+  .projects-subtitle {
+    margin: 0 0 26px;
+    color: var(--text-muted);
+    font-size: 1.05rem;
+  }
+  
+  /* Grid */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(240px, 420px));
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.project-card {
-    background: white;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 250px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scaling and shadow */
-}
-
-.project-card a {
-    text-decoration: none; /* Removes the underline */
-    color: inherit; /* Ensures the text color matches the parent */
-}
-
-.project-name, .project-description {
-    margin: 0;
-    color: #333; /* Optional: sets text color for project name and description */
-    text-decoration: none; /* Ensure no underline even if it's inside a link */
-}
-
-
-.project-image {
+    gap: 18px;
+  }
+  
+  /* Link wrapper */
+  .project-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Card */
+  .project-card {
+    background: var(--bg-2);
+    border: 1px solid var(--border);
+    border-radius: var(--r-lg);
+    overflow: hidden;
+    text-align: left;
+  
+    transform: translateY(16px);
+    opacity: 0;
+    transition: opacity 420ms ease, transform 420ms ease, border-color 160ms ease;
+  }
+  
+  .project-card:hover {
+    border-color: var(--brand);
+  }
+  
+  /* When observed */
+  .project-card.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Media + image slide-in */
+  .project-media {
+    position: relative;
+    background: var(--bg);
+    aspect-ratio: 16/9;
+    overflow: hidden;
+  }
+  
+  .project-image {
     width: 100%;
-    border-radius: 10px;
-}
+    height: 100%;
+    object-fit: cover;
+  
+    transform: translateX(-18px);
+    opacity: 0;
+    transition: transform 520ms ease, opacity 520ms ease;
+  }
+  
+  .project-card.in-view .project-image {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+  /* Optional badge */
+  .project-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: var(--brand);
+    color: #fff;
+    font-weight: 800;
+    font-size: 12px;
+    letter-spacing: 0.3px;
+  }
+  
+  /* Body */
+  .project-body {
+    padding: 14px 14px 16px;
+  
+    transform: translateX(14px);
+    opacity: 0;
+    transition: transform 520ms ease, opacity 520ms ease;
+  }
+  
+  .project-card.in-view .project-body {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+  /* Make title colors stand out more */
+  .project-name {
+    margin: 0;
+    font-size: 1.35rem;
+    font-weight: 900;
+    color: var(--text);
+  }
+  
+  .project-name.highlight {
+    color: var(--brand-2);
+  }
+  
+  .project-description {
+    margin: 8px 0 12px;
+    color: var(--text-muted);
+    line-height: 1.35;
+  }
+  
+  .project-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 800;
+    color: var(--brand-2);
+  }
+  
+  /* Responsive */
+  @media (max-width: 860px) {
+    .projects-grid {
+      grid-template-columns: 1fr;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+  }
 
-.project-name {
-    font-size: 1.5rem;
-    margin-top: 10px;
-    text-decoration: none; /* Ensures no underline */
-    color: inherit; /* Ensures the text color matches the parent */
-}
-
-.project-description {
-    font-size: 1rem;
-    color: #555;
-}
-
-
-
-/* Add hover effect for enlarging the project cards */
-
-
-.project-card:hover {
-    transform: scale(1.05); /* Slightly enlarge the card */
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhance the shadow on hover */
-}
+  .projects-title::after {
+    content: "";
+    display: block;
+    width: 84px;
+    height: 4px;
+    margin: 10px auto 0;
+    border-radius: 999px;
+    background: var(--brand);
+  }
+  

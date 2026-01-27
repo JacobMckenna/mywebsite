@@ -1,9 +1,21 @@
 .education-container {
-    text-align: center;
     padding: 20px;
-    background-color: #eef5f9;
-}
-
+    background: transparent;
+  }
+  
+  .education-card {
+    background: var(--bg-2);
+    border: 1px solid var(--border);
+    border-radius: var(--r-md);
+    padding: 15px;
+    width: 300px;
+  }
+  
+  .education-degree,
+  .education-years {
+    color: var(--text-muted);
+  }
+  
 .title {
     font-size: 2rem;
     margin-bottom: 10px;
@@ -19,15 +31,6 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-}
-
-.education-card {
-    background: white;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    text-align: center;
 }
 
 .education-image {

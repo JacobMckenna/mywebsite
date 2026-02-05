@@ -109,7 +109,7 @@ export default function HeroSection({ tech }) {
         <a
           className="inline-flex items-center justify-center px-5 sm:px-6 py-3 rounded-xl font-semibold text-sm sm:text-base
                      border border-slate-700 text-slate-200 hover:bg-slate-800/30 transition-all active:scale-[0.98]"
-          href="/contact"
+          href="/about"
         >
           Contact
         </a>

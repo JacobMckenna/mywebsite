@@ -203,7 +203,7 @@ export default function About() {
               {/* LEFT SIDE TEXT */}
               <div className="max-w-xl">
                 <h2 className="text-2xl sm:text-3xl font-bold text-white">
-                  Let’s talk
+                  Let's talk
                 </h2>
 
                 <p className="mt-3 text-slate-300 leading-relaxed">

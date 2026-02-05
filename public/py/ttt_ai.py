@@ -1,16 +1,8 @@
 # public/py/ttt_ai.py
-# ✅ FIX: Use the SAME square/bit ordering as your ORIGINAL game (Button/Board):
 #   index = x + y*3  (row-major)
 #   move mask = 1 << index
-#
-# Your React board array is also row-major (0..8). The only mismatch was
-# the bit order in this Pyodide AI file.
-#
-# IMPORTANT: This assumes your React side is now using:
 #   bit = 1 << i   (NOT 1 << (8 - i))
 # in toBitboards().
-#
-# If you haven't changed React yet, do that first (otherwise you'll still have mismatch).
 
 WIN_MASKS = [
     0b000000111, 0b000111000, 0b111000000,  # rows (top -> bottom)
@@ -34,12 +26,10 @@ def _is_full(x_bits: int, o_bits: int) -> bool:
 def _moves(x_bits: int, o_bits: int):
     occ = (x_bits | o_bits) & FULL_MASK
     for i in range(9):
-        # ✅ bit i corresponds to cell index i
         if (occ & (1 << i)) == 0:
             yield i
 
 def _place(bits: int, move_index: int) -> int:
-    # ✅ move_index 0..8 -> set bit (1 << move_index)
     return bits | (1 << move_index)
 
 def _minimax(x_bits: int, o_bits: int, turn: str):

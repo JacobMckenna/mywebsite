@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+    --font: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+    --bg-2: rgba(15, 17, 23, 0.55);
+    --bg-3: rgba(15, 17, 23, 0.75);
+    --border: rgba(148, 163, 184, 0.25);
+    --border-strong: rgba(148, 163, 184, 0.45);
+    --brand: #3b82f6;
+    --text: #e5e7eb;
+    --text-muted: rgba(148, 163, 184, 0.9);
+    --r-md: 14px;
+    --r-lg: 18px;
+  }

@@ -23,7 +23,7 @@ function Projects() {
   return (
     <section className="projects-container" id="projects">
       <h2 className="projects-title">Projects</h2>
-      <p className="projects-subtitle">Some stuff I’ve built recently.</p>
+      <p className="projects-subtitle">Some stuff I've built recently.</p>
 
       <div className="projects-grid">
         <Link to="/tictactoe" className="project-link">

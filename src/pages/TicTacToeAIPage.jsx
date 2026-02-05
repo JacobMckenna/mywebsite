@@ -1,7 +1,8 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "../components/layout/Header";
+import Footer from "../components/layout/Footer";
 import "../styles/TicTacToeAIPage.css";
+import DotBackground from "../components/layout/DotBackground";
 
 import { updateDoc, increment } from "firebase/firestore";
 
@@ -18,7 +19,9 @@ import Grid from "../tictactoe/components/Grid";
 
 export default function TicTacToeAIPage() {
   const { pyReady, pyErr, setPyErr } = usePyodide();
-  const { stats, statsLoading, statsRef } = useFirestoreStats();
+  // const { stats, statsLoading, statsRef } = useFirestoreStats();
+  const { stats, statsLoading, statsError, statsRef } = useFirestoreStats();
+
 
   const [board, setBoard] = useState(() => Array(9).fill(null));
   const [human, setHuman] = useState("X");
@@ -147,7 +150,7 @@ export default function TicTacToeAIPage() {
   }, []);
 
   return (
-    <div className="app-container">
+    <DotBackground>
       <Header />
 
       <div className="ttt-wrap">
@@ -155,6 +158,29 @@ export default function TicTacToeAIPage() {
           <TopBar />
 
           <GameHeader stats={stats} statsLoading={statsLoading} />
+          {statsError && (
+            <div
+              style={{
+                marginTop: "6px",
+                fontSize: "0.75rem",
+                color: "#ff6b6b",
+                textAlign: "center",
+              }}
+            >
+              Firestore error: {statsError}
+            </div>
+                      )}
+                      <div
+              style={{
+                opacity: 0.4,
+                fontSize: "0.65rem",
+                textAlign: "center",
+                marginTop: "4px",
+              }}
+            >
+            </div>
+
+
 
           <Controls
             human={human}
@@ -180,11 +206,12 @@ export default function TicTacToeAIPage() {
             gameOver={gameOver}
             pyReady={pyReady}
             pyErr={pyErr}
+            onNewGame={() => resetGame(human)}
           />
         </div>
       </div>
 
       <Footer />
-    </div>
+    </DotBackground>
   );
 }

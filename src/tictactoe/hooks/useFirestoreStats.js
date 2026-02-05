@@ -1,41 +1,8 @@
-// import { useEffect, useMemo, useState } from "react";
-// import { db } from "../../firebase";
-// import { doc, onSnapshot, setDoc } from "firebase/firestore";
-
-// export function useFirestoreStats() {
-//   const [stats, setStats] = useState(null);
-//   const [statsLoading, setStatsLoading] = useState(true);
-
-//   const statsRef = useMemo(() => doc(db, "stats", "tictactoe"), []);
-
-//   useEffect(() => {
-//     let unsub = () => {};
-
-//     (async () => {
-//       setStatsLoading(true);
-
-//       unsub = onSnapshot(statsRef, (snap) => {
-//         if (snap.exists()) setStats(snap.data());
-//         setStatsLoading(false);
-//       });
-
-//       const { getDoc } = await import("firebase/firestore");
-//       const snap = await getDoc(statsRef);
-//       if (!snap.exists()) {
-//         await setDoc(statsRef, { wins: 0, losses: 0, ties: 0, games: 0 });
-//       }
-//     })().catch(console.error);
-
-//     return () => unsub();
-//   }, [statsRef]);
-
-//   return { stats, statsLoading, statsRef };
-// }
-
-
 import { useEffect, useMemo, useState } from "react";
 import { db } from "../../firebase";
-import { doc, onSnapshot, setDoc, getDoc } from "firebase/firestore";
+import { doc, onSnapshot, setDoc } from "firebase/firestore";
+
+/** @typedef {{ wins:number, losses:number, ties:number, games:number }} Stats */
 
 const DEFAULT_STATS = { wins: 0, losses: 0, ties: 0, games: 0 };
 
@@ -47,42 +14,44 @@ export function useFirestoreStats() {
   const statsRef = useMemo(() => doc(db, "stats", "tictactoe"), []);
 
   useEffect(() => {
+    let alive = true;
+
     setStatsLoading(true);
     setStatsError("");
 
-    // ✅ REAL-TIME LISTENER WITH ERROR HANDLER
     const unsub = onSnapshot(
       statsRef,
       (snap) => {
-        if (snap.exists()) {
-          setStats(snap.data());
-        } else {
-          // ✅ prevents "nothing loads" when doc doesn't exist yet
-          setStats(DEFAULT_STATS);
-        }
+        if (!alive) return;
+
+        setStats(snap.exists() ? snap.data() : DEFAULT_STATS);
         setStatsLoading(false);
       },
       (err) => {
+        if (!alive) return;
+
         console.error("Firestore onSnapshot error:", err);
         setStatsError(err?.message || String(err));
         setStatsLoading(false);
       }
     );
 
-    // ✅ Ensure document exists (non-blocking)
+    // Ensure doc exists safely
     (async () => {
       try {
-        const snap = await getDoc(statsRef);
-        if (!snap.exists()) {
-          await setDoc(statsRef, DEFAULT_STATS);
-        }
+        await setDoc(statsRef, DEFAULT_STATS, { merge: true });
       } catch (err) {
-        console.error("Firestore getDoc/setDoc error:", err);
+        if (!alive) return;
+
+        console.error("Firestore setDoc error:", err);
         setStatsError((prev) => prev || (err?.message || String(err)));
       }
     })();
 
-    return () => unsub();
+    return () => {
+      alive = false;
+      unsub();
+    };
   }, [statsRef]);
 
   return { stats, statsLoading, statsError, statsRef };

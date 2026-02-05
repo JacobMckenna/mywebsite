@@ -198,21 +198,19 @@ export default function About() {
           {/* ---------- CONTACT ---------- */}
           <div className="rounded-3xl border border-slate-700/40 bg-slate-900/25 backdrop-blur-xl shadow-2xl p-6 sm:p-8">
   
-            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-8">
+            <div className="grid md:grid-cols-[1fr_auto] gap-10 items-center">
 
               {/* LEFT SIDE TEXT */}
               <div className="max-w-xl">
-                <h2 className="text-2xl sm:text-3xl font-bold text-white">
-                  Let's talk
-                </h2>
+                <h2 className="text-3xl font-bold mb-4">Let's talk</h2>
 
-                <p className="mt-3 text-slate-300 leading-relaxed">
+                <p className="text-muted-foreground max-w-lg leading-relaxed">
                   If you want to talk about internships, projects, or anything related to development or GIS, feel free to reach out. I'd love to chat.
                 </p>
               </div>
 
               {/* RIGHT SIDE CONTACT STACK */}
-              <div className="flex flex-col gap-3 min-w-[220px] pl-6 border-l border-slate-700/50">
+              <div className="flex flex-col gap-3 min-w-[260px] pl-6 border-l border-slate-700/50">
 
                 {/* Email */}
                 <a

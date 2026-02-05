@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 function Header() {
 
   const baseButton =
-    "px-4 py-2.5 font-semibold text-sm rounded-xl border transition-all shadow-lg active:translate-y-0.5";
+  "flex-1 text-center px-2 sm:px-4 py-2 sm:py-2.5 font-semibold text-xs sm:text-sm rounded-xl border transition-all shadow-lg active:translate-y-0.5 whitespace-nowrap";
 
   const inactiveButton =
     "border-slate-700 bg-slate-800/80 text-slate-200 hover:bg-slate-700/80 hover:border-slate-600";
@@ -30,7 +30,7 @@ function Header() {
       </NavLink>
 
       {/* RIGHT — Navigation */}
-      <nav className="flex items-center gap-3">
+      <nav className="flex gap-2 px-2 w-full max-w-md">
 
         <NavLink
           to="/"

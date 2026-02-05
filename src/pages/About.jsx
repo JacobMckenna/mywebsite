@@ -16,12 +16,24 @@ export default function About() {
         <section className="flex flex-col gap-12">
 
           {/* ---------- INTRO ---------- */}
-          <div className="relative overflow-hidden rounded-3xl border border-slate-700/40 bg-slate-900/25 backdrop-blur-xl shadow-2xl p-6 sm:p-8 sm:pr-[320px]">
+          <div className="relative overflow-hidden rounded-3xl border border-slate-700/40 bg-slate-900/25 backdrop-blur-xl shadow-2xl p-6 sm:p-8">
+
 
             <img
               src={process.env.PUBLIC_URL + "/about-figure.png"}
               alt="Jacob illustration"
-              className="pointer-events-none select-none absolute bottom-0 right-0 w-[250px] lg:w-[280px]"
+              className="
+                block
+                mx-auto
+                mb-6
+
+                sm:float-right
+                sm:ml-6
+
+                w-40 sm:w-52 md:w-64
+                rounded-xl
+                shadow-xl
+              "
             />
 
             <div className="mt-5 space-y-4 max-w-2xl">
@@ -197,69 +209,71 @@ export default function About() {
 
           {/* ---------- CONTACT ---------- */}
           <div className="rounded-3xl border border-slate-700/40 bg-slate-900/25 backdrop-blur-xl shadow-2xl p-6 sm:p-8">
-  
-            <div className="grid md:grid-cols-[1fr_auto] gap-10 items-center">
 
-              {/* LEFT SIDE TEXT */}
-              <div className="max-w-xl">
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-10">
+
+              {/* LEFT TEXT */}
+              <div className="w-full md:max-w-lg text-left">
                 <h2 className="text-3xl font-bold mb-4">Let's talk</h2>
 
-                <p className="text-muted-foreground max-w-lg leading-relaxed">
-                  If you want to talk about internships, projects, or anything related to development or GIS, feel free to reach out. I'd love to chat.
+                <p className="text-slate-300 leading-relaxed">
+                  If you want to talk about internships, projects, or anything related to development or GIS,
+                  feel free to reach out. I'd love to chat.
                 </p>
               </div>
 
-              {/* RIGHT SIDE CONTACT STACK */}
-              <div className="flex flex-col gap-3 min-w-[260px] pl-6 border-l border-slate-700/50">
+              {/* CONTACT BUTTON STACK */}
+              <div className="w-full md:w-auto flex flex-col gap-3">
 
-                {/* Email */}
                 <a
                   href="mailto:jrjmckenna@outlook.com"
-                  className="inline-flex items-center gap-3 px-5 py-3 rounded-xl font-semibold
-                            bg-gradient-to-r from-blue-600 to-blue-500 text-white
-                            hover:from-blue-500 hover:to-blue-600
-                            shadow-lg shadow-blue-500/25 transition-all"
+                  className="w-full md:w-[280px] flex items-center justify-center md:justify-start gap-3 px-5 py-4 rounded-xl font-semibold
+                  bg-gradient-to-r from-blue-600 to-blue-500 text-white
+                  shadow-lg shadow-blue-500/25 transition-all hover:scale-[1.02]"
                 >
-                  <MdOutlineEmail size={24} /> jrjmckenna@outlook.com
+                  <MdOutlineEmail size={22} />
+                  jrjmckenna@outlook.com
                 </a>
 
-                {/* Phone */}
                 <a
                   href="tel:+15192223891"
-                  className="inline-flex items-center gap-3 px-5 py-3 rounded-xl
-                            border border-slate-700 bg-slate-800/40 text-slate-200
-                            hover:bg-slate-700/60 transition-all"
+                  className="w-full md:w-[280px] flex items-center justify-center md:justify-start gap-3 px-5 py-4 rounded-xl
+                  border border-slate-700 bg-slate-800/40 text-slate-200
+                  hover:bg-slate-700/60 transition-all"
                 >
-                  <MdPhoneEnabled size={24} className="text-red-500"/> +1 (519) 222-3891
+                  <MdPhoneEnabled size={22} className="text-red-500" />
+                  +1 (519) 222-3891
                 </a>
 
-                {/* LinkedIn */}
                 <a
                   href="https://www.linkedin.com/in/jrjmckenna/"
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-3 px-5 py-3 rounded-xl
-                            border border-slate-700 bg-slate-800/40 text-slate-200
-                            hover:bg-slate-700/60 transition-all"
+                  className="w-full md:w-[280px] flex items-center justify-center md:justify-start gap-3 px-5 py-4 rounded-xl
+                  border border-slate-700 bg-slate-800/40 text-slate-200
+                  hover:bg-slate-700/60 transition-all"
                 >
-                  <FaLinkedinIn size={24} className="text-blue-400"/> LinkedIn
+                  <FaLinkedinIn size={22} className="text-blue-400" />
+                  LinkedIn
                 </a>
 
-                {/* GitHub */}
                 <a
                   href="https://github.com/JacobMckenna"
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-3 px-5 py-3 rounded-xl
-                            border border-slate-700 bg-slate-800/40 text-slate-200
-                            hover:bg-slate-700/60 transition-all"
+                  className="w-full md:w-[280px] flex items-center justify-center md:justify-start gap-3 px-5 py-4 rounded-xl
+                  border border-slate-700 bg-slate-800/40 text-slate-200
+                  hover:bg-slate-700/60 transition-all"
                 >
-                  <FaGithub size={24}/> GitHub
+                  <FaGithub size={22} />
+                  GitHub
                 </a>
 
               </div>
             </div>
           </div>
+
+
 
 
 

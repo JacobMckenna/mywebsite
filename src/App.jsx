@@ -5,6 +5,7 @@ import Portfolio from './pages/Portfolio.jsx';
 import TicTacToeAIPage from "./pages/TicTacToeAIPage.jsx";
 import ScrollToTop from "./components/helpers/ScrollToTop.jsx";
 import About from "./pages/About";
+import MortgageSim from "./pages/MortgageSim";
 
 import "./index.css";
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/tictactoe" element={<TicTacToeAIPage />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<TicTacToeAIPage />} />
+          <Route path="/MortgageSim" element={<MortgageSim />} />
         </Routes>
     </>
   );

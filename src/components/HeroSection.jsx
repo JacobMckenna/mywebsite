@@ -43,27 +43,37 @@ export default function HeroSection({ tech }) {
       <div className="flex flex-col md:flex-row gap-6 md:gap-10 items-start w-full min-w-0 relative">
         {/* Hero Image */}
         <div className="relative group">
-          <img
-            src={process.env.PUBLIC_URL + "/profile.jpg"}
-            alt="Jacob McKenna"
+          <div
+            role="button"
+            tabIndex={0}
             onClick={triggerEaster}
             onMouseDown={startHold}
             onMouseUp={cancelHold}
             onMouseLeave={cancelHold}
-            onTouchStart={startHold}
+            onTouchStart={(e) => {
+              e.preventDefault();
+              startHold();
+            }}
             onTouchEnd={cancelHold}
             onTouchCancel={cancelHold}
+            onContextMenu={(e) => e.preventDefault()}
             className={`
               w-28 h-28 sm:w-36 sm:h-36 md:w-56 md:h-56
-              rounded-3xl object-cover
+              rounded-3xl
               border border-white/10
               shadow-3xl
               cursor-pointer
               transition-all duration-300
               group-hover:scale-105 group-hover:shadow-blue-500/30
+              select-none bg-cover bg-center bg-no-repeat
               ${easter ? "animate-[heroWiggle_600ms_ease]" : ""}
             `}
-            loading="eager"
+            style={{
+              backgroundImage: `url(${process.env.PUBLIC_URL + "/profile.jpg"})`,
+              WebkitTouchCallout: "none",
+              WebkitUserSelect: "none",
+              userSelect: "none",
+            }}
           />
         </div>
 

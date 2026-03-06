@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import {
   IoLocationSharp,
   IoSchoolSharp,
@@ -10,24 +10,49 @@ import {
 
 export default function HeroSection({ tech }) {
   const [easter, setEaster] = useState(false);
+  const holdTimer = useRef(null);
+  const holdTriggered = useRef(false);
 
   const triggerEaster = () => {
-    setEaster(true);
+    if (holdTriggered.current) {
+      holdTriggered.current = false;
+      return;
+    }
 
+    setEaster(true);
     setTimeout(() => setEaster(false), 500);
+  };
+
+  const startHold = () => {
+    clearTimeout(holdTimer.current);
+    holdTriggered.current = false;
+
+    holdTimer.current = setTimeout(() => {
+      holdTriggered.current = true;
+      window.location.href = "/dnd";
+    }, 1500);
+  };
+
+  const cancelHold = () => {
+    clearTimeout(holdTimer.current);
   };
 
   return (
     <>
       {/* Hero */}
       <div className="flex flex-col md:flex-row gap-6 md:gap-10 items-start w-full min-w-0 relative">
-
         {/* Hero Image */}
         <div className="relative group">
           <img
             src={process.env.PUBLIC_URL + "/profile.jpg"}
             alt="Jacob McKenna"
             onClick={triggerEaster}
+            onMouseDown={startHold}
+            onMouseUp={cancelHold}
+            onMouseLeave={cancelHold}
+            onTouchStart={startHold}
+            onTouchEnd={cancelHold}
+            onTouchCancel={cancelHold}
             className={`
               w-28 h-28 sm:w-36 sm:h-36 md:w-56 md:h-56
               rounded-3xl object-cover

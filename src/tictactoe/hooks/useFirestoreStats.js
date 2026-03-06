@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { db } from "../../firebase";
-import { doc, onSnapshot, setDoc } from "firebase/firestore";
+import { doc, onSnapshot, setDoc, getDoc } from "firebase/firestore";
 
 /** @typedef {{ wins:number, losses:number, ties:number, games:number }} Stats */
 
@@ -11,7 +11,7 @@ export function useFirestoreStats() {
   const [statsLoading, setStatsLoading] = useState(true);
   const [statsError, setStatsError] = useState("");
 
-  const statsRef = useMemo(() => doc(db, "stats", "tictactoe"), []);
+  const statsRef = useMemo(() => doc(db, "stats", "tictactoe"), [db]);
 
   useEffect(() => {
     let alive = true;
@@ -19,16 +19,24 @@ export function useFirestoreStats() {
     setStatsLoading(true);
     setStatsError("");
 
+    // Helpful: if nothing returns, you’ll see it
+    const watchdog = setTimeout(() => {
+      if (!alive) return;
+      setStatsError((prev) => prev || "Firestore is taking a long time to respond (check rules/network).");
+    }, 5000);
+
     const unsub = onSnapshot(
       statsRef,
       (snap) => {
         if (!alive) return;
+        clearTimeout(watchdog);
 
         setStats(snap.exists() ? snap.data() : DEFAULT_STATS);
         setStatsLoading(false);
       },
       (err) => {
         if (!alive) return;
+        clearTimeout(watchdog);
 
         console.error("Firestore onSnapshot error:", err);
         setStatsError(err?.message || String(err));
@@ -36,20 +44,22 @@ export function useFirestoreStats() {
       }
     );
 
-    // Ensure doc exists safely
     (async () => {
       try {
-        await setDoc(statsRef, DEFAULT_STATS, { merge: true });
+        const snap = await getDoc(statsRef);
+        if (!snap.exists()) {
+          await setDoc(statsRef, DEFAULT_STATS);
+        }
       } catch (err) {
         if (!alive) return;
-
-        console.error("Firestore setDoc error:", err);
+        console.error("Firestore getDoc/setDoc error:", err);
         setStatsError((prev) => prev || (err?.message || String(err)));
       }
     })();
 
     return () => {
       alive = false;
+      clearTimeout(watchdog);
       unsub();
     };
   }, [statsRef]);

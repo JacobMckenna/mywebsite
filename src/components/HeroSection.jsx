@@ -29,7 +29,7 @@ export default function HeroSection({ tech }) {
 
     holdTimer.current = setTimeout(() => {
       holdTriggered.current = true;
-      window.location.href = "/dnd";
+      window.location.href = "/dnd/home";
     }, 1500);
   };
 
@@ -46,17 +46,21 @@ export default function HeroSection({ tech }) {
           <div
             role="button"
             tabIndex={0}
+
             onClick={triggerEaster}
-            onMouseDown={startHold}
-            onMouseUp={cancelHold}
-            onMouseLeave={cancelHold}
-            onTouchStart={(e) => {
+
+            onPointerDown={(e) => {
               e.preventDefault();
               startHold();
             }}
-            onTouchEnd={cancelHold}
-            onTouchCancel={cancelHold}
+
+            onPointerUp={cancelHold}
+            onPointerLeave={cancelHold}
+            onPointerCancel={cancelHold}
+
             onContextMenu={(e) => e.preventDefault()}
+            onDragStart={(e) => e.preventDefault()}
+
             className={`
               w-28 h-28 sm:w-36 sm:h-36 md:w-56 md:h-56
               rounded-3xl
@@ -73,6 +77,8 @@ export default function HeroSection({ tech }) {
               WebkitTouchCallout: "none",
               WebkitUserSelect: "none",
               userSelect: "none",
+              touchAction: "manipulation",
+              pointerEvents: "auto",
             }}
           />
         </div>

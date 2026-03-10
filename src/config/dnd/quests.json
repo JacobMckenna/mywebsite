@@ -1,0 +1,65 @@
+[
+    {
+      "id": "placeholder-quest-1",
+      "title": "Placeholder Quest Alpha",
+      "campaign": "TBD Campaign",
+  
+      "completed": false,
+  
+      "objective": "This is a placeholder objective used for testing the quest system.",
+  
+      "summary": "This quest exists only as a development placeholder. It will be replaced with an actual quest later.",
+  
+      "rewards": [
+        "Placeholder reward",
+        "Debug loot"
+      ],
+  
+      "notes": [
+        "Remove before final release",
+        "Used only for layout testing"
+      ]
+    },
+    {
+      "id": "placeholder-quest-2",
+      "title": "Placeholder Quest Beta",
+      "campaign": "TBD Campaign",
+  
+      "completed": false,
+  
+      "objective": "Temporary objective used to test filtering, sorting, and UI layout.",
+  
+      "summary": "A completely fake quest designed only to populate the quest list during development.",
+  
+      "rewards": [
+        "Temporary reward",
+        "Placeholder gold"
+      ],
+  
+      "notes": [
+        "Testing quest card layout",
+        "Safe to delete anytime"
+      ]
+    },
+    {
+      "id": "placeholder-quest-3",
+      "title": "Placeholder Quest Gamma",
+      "campaign": "TBD Campaign",
+  
+      "completed": false,
+  
+      "objective": "Fake objective for development purposes only.",
+  
+      "summary": "This placeholder helps test how high-priority quests appear in the UI.",
+  
+      "rewards": [
+        "Fake artifact",
+        "Development XP"
+      ],
+  
+      "notes": [
+        "Used to test priority styling",
+        "Not part of the real campaign"
+      ]
+    }
+  ]

@@ -1,6 +1,6 @@
 import React from "react";
 import { useIsMobile } from "../../hooks/useIsMobile";
-import { GiTiedScroll, GiTreasureMap, GiChest, GiDiceTwentyFacesTwenty, GiReturnArrow  } from "react-icons/gi";
+import { GiTiedScroll, GiTreasureMap, GiChest, GiDiceTwentyFacesTwenty, GiReturnArrow, GiSpikedDragonHead  } from "react-icons/gi";
 
 // https://react-icons.github.io/react-icons/icons/gi/
 
@@ -16,9 +16,10 @@ export default function Header({ title = "The Echoes of Legends", activePage = "
   };
 
   const navItems = [
-    // { label: "Quest Log", href: "/dnd/quest-log", icon: GiTiedScroll  },
-    // { label: "Epic Moments", href: "/dnd/epic-moments", icon: GiDiceTwentyFacesTwenty },
-    // { label: "World Map", href: "/dnd/world-map", icon: GiTreasureMap },
+    { label: "Quest Log", href: "/dnd/quests", icon: GiTiedScroll  },
+    { label: "Epic Moments", href: "/dnd/epic", icon: GiDiceTwentyFacesTwenty },
+    { label: "World Map", href: "/dnd/map", icon: GiTreasureMap },
+    { label: "Session Log", href: "/dnd/sessions", icon: GiSpikedDragonHead },
     // { label: "Items", href: "/dnd/items", icon: GiChest },
   ];
 

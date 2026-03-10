@@ -1,0 +1,26 @@
+[
+    {
+      "id": "elder-tree-last-stand",
+      "campaignId": "adventure",
+      "title": "The Last Stand at the Elder Tree",
+      "imageSrc": "/dnd/epic-moments/elder-tree-last-stand.png",
+      "description": "As the sky cracked with necrotic lightning, the party held the line beneath the Elder Tree. Steel, spellfire, and divine wrath collided in a battle that would be remembered across Valeria.",
+      "characterIds": ["zarathustra", "zyvan"]
+    },
+    {
+      "id": "siege-of-the-dwarven-gate",
+      "campaignId": "echoes",
+      "title": "Siege of the Dwarven Gate",
+      "imageSrc": "/dnd/epic-moments/siege-of-the-dwarven-gate.png",
+      "description": "With the gates splintering and the war drums shaking the stone, the defenders made their stand in a desperate clash against overwhelming force.",
+      "characterIds": ["zarathustra"]
+    },
+    {
+      "id": "dragonfall-vow",
+      "campaignId": "echoes",
+      "title": "The Dragonfall Vow",
+      "imageSrc": "/dnd/epic-moments/dragonfall-vow.png",
+      "description": "Before the ashes of a ruined battlefield, the heroes swore an oath to bring down every dragon that threatened Elandria, no matter the cost.",
+      "characterIds": ["zyvan"]
+    }
+  ]

@@ -1,0 +1,20 @@
+[
+    {
+        "id": "adventure",
+        "name": "The Adventure",
+        "description": "New heroes arise as they assassinate King Matthias of Mudra. They have to get through tough defenses in the Kings fortress. But who knows what troubles lie in the lands afterwards",
+        "coverImageSrc": "/dnd/campaigns/team_banner.png"
+    },
+    {
+      "id": "starwars",
+      "name": "Star Wars DnD",
+      "description": "A group of adventurers find themselves together on a frozen wasteland. They find home in a rebel base where the Empire attacks shortly after.",
+      "coverImageSrc": "/dnd/campaigns/star_wars_high_ground.png"
+    },
+    {
+      "id": "echoes",
+      "name": "Echoes of Legends",
+      "description": "A group of adventurers gather in Evergreen Hollow. They learn of mysterious occurrences that have begun plaguing the town. They have to figure out what is behind these. Unbeknownst to them, there are much larger forces at play behind these occurrences.",
+      "coverImageSrc": "/dnd/campaigns/evergreen_gang.png"
+    }
+  ]

@@ -73,7 +73,7 @@ export default function HeroSection({ tech }) {
               ${easter ? "animate-[heroWiggle_600ms_ease]" : ""}
             `}
             style={{
-              backgroundImage: `url(${process.env.PUBLIC_URL + "/profile.jpg"})`,
+              backgroundImage: `url(${process.env.PUBLIC_URL + "/portraits/profile.jpg"})`,
               WebkitTouchCallout: "none",
               WebkitUserSelect: "none",
               userSelect: "none",

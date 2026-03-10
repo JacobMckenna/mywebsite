@@ -181,7 +181,7 @@ function SarahPage() {
               {buttonState === 10 && (
                 <div className="goldie-overlay">
                   <img
-                    src={process.env.PUBLIC_URL + '/goldie.jpg'}
+                    src={process.env.PUBLIC_URL + '/animals/goldie.jpg'}
                     alt="Goldie"
                     className="goldie-photo"
                   />
@@ -210,7 +210,7 @@ function SarahPage() {
               {buttonState === 14 && (
                 <div className="goldie-overlay">
                   <img
-                    src={process.env.PUBLIC_URL + '/scoot.jpg'}
+                    src={process.env.PUBLIC_URL + '/animals/scoot.jpg'}
                     alt="Scoot"
                     className="scoot-photo"
                   />
@@ -239,7 +239,7 @@ function SarahPage() {
               {buttonState === 18 && (
                 <div className="goldie-overlay">
                   <img
-                    src={process.env.PUBLIC_URL + '/missclara.jpg'}
+                    src={process.env.PUBLIC_URL + '/animals/missclara.jpg'}
                     alt="Miss Clara"
                     className="missclara-photo"
                   />

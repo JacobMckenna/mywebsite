@@ -1,0 +1,169 @@
+[
+    {
+        "campaignId": "adventure",
+        "sessionNumber": 1,
+        "title": "Assassination of King Matthias",
+        "imageSrc": "/dnd/session/Session_1_Background.jpg",
+        "description": "The party assassinates King Matthias inside the fortress of Mudra."
+    },
+
+    {
+        "campaignId": "starwars",
+        "sessionNumber": 1,
+        "title": "Star wars place holder",
+        "imageSrc": "/dnd/session/Session_1_Background.jpg",
+        "description": "The party assassinates King Matthias inside the fortress of Mudra."
+    },
+
+
+
+    {
+        "campaignId": "echoes",
+        "sessionNumber": 1,
+        "title": "CHEWSDAY DND",
+        "imageSrc": "/dnd/session/Session_1_Background.jpg",
+        "description": [
+            "We start the first session today. IM FUCKING HYPEDD LETTTS GOOOOOOO!",
+            "Make sure you join the Roll20 beforehand so that we can start right away.",
+            "https://app.roll20.net/join/15318919/nEWsfw",
+            "Try to be in the VC at 6pm sharp so that we can start right away as well. It seems to be tough to get all of our schedules to line up so I don't want to waste any time."
+        ]
+    },
+    {
+        "campaignId": "echoes",
+        "sessionNumber": 2,
+        "title": "DnD (2nd session)",
+        "imageSrc": "/dnd/session/Session_2_Background.png",
+        "description": [
+            "Venturing into the dense forest of Evergreen Hollow, the party stumbled upon a small village where they sought respite at the local tavern.",
+            "There, they met the tavern owner, Griswold Ironwood, a friendly but rugged lumberjack.",
+            "Intrigued by strange noises and reports of unusual occurrences in the forest, the party spoke with Griswold about what had been happening in the area.",
+            "Griswold shared his concerns and spoke of his missing brother, Malachi, a secretive wizard rumored to have been dabbling in dark magic.",
+            "Following these clues deeper into Evergreen Hollow, the party discovered forgotten ruins and whispers of a long-lost group of ancient heroes and the power they once possessed.",
+            "With these revelations, the party’s destiny began to unfold as they prepared to face the challenges ahead and uncover the ancient secrets waiting in the shadows."
+        ]
+    },
+    {
+        "campaignId": "echoes",
+        "sessionNumber": 3,
+        "title": "DnD Session 3: Gone with Gold",
+        "imageSrc": "/dnd/session/Session_3_Background.jpg",
+        "description": [
+            "The party's daring gambit begins as corruption tightens its grip on the grand city of Valeria.",
+            "With whispers of rebellion spreading through the streets and dangerous secrets swirling beneath the surface, the heroes find themselves standing at a crossroads.",
+            "They must choose their path: infiltrate the opulent halls of the King's Palace, slipping past guards and avoiding capture in an audacious attempt to seize a fortune in gold, or descend into the treacherous depths of the Tomb of Shadows.",
+            "Within the tomb, unknown dangers and ancient forces wait for those bold enough to step near.",
+            "The fate of their daring heist or harrowing expedition hangs in the balance as the party prepares to face whatever perils lie ahead."
+        ]
+    },
+    {
+        "campaignId": "echoes",
+        "sessionNumber": 4,
+        "title": "DnD Session 4: The Uprising",
+        "imageSrc": "/dnd/session/Session_4_Background.jpg",
+        "description": [
+            "Inside the long-awaited Palace Vault, the party is ambushed by a deadly assassin shortly after their encounter with the malicious Malachi.",
+            "With only five minutes granted by the ruthless King Mortannis, they must race against time to uncover and steal the vault's hidden treasures.",
+            "At the same time, their companions raid the palace in an attempt to abduct the marshal, knowing that failure will mean imminent execution.",
+            "The outcome of both daring operations will shape the course of their journey as the party makes its mark on the kingdom of Valeria.",
+            "The party loots roughly 300 pounds of gold, worth approximately 25,000 gold pieces.",
+            "They also recover around 20 pounds of explosives, including bombs and powder kegs."
+        ]
+    },
+    {
+        "campaignId": "echoes",
+        "sessionNumber": 5,
+        "title": "DnD Session 5: Flames of Fury",
+        "imageSrc": "/dnd/session/Session_5_Background.jpg",
+        "description": [
+            "After successfully infiltrating the Coven of Eternal Night's stronghold within the Tomb of Shadows, the party emerges victorious with the stolen Arcane Crown.",
+            "Prince Lucius reveals that this ancient artifact holds enough power to overthrow the reign of his father, the powerful King Mortannis.",
+            "Now faced with a moral dilemma, the party must decide whether to support the prince's cause for justice or succumb to the temptations of power and eliminate the prince as a threat.",
+            "The fate of the kingdom now rests upon their monumental decision, one that will determine whether Valeria rises to a new glory or collapses into ruin.",
+            "The party initiates a raid into the royal palace."
+        ]
+    },
+    {
+        "campaignId": "echoes",
+        "sessionNumber": 6,
+        "title": "DnD Session 6: Battle for the Throne",
+        "imageSrc": "/dnd/session/Session_6_background.png",
+        "description": [
+            "Within the rotten walls of Valeria, the party takes command of the rebellion, guided by Prince Lucius, fighting alongside Ragnar, and empowered by the Arcane Crown.",
+            "Together they storm the Pristine Palace, pushing through its defenses until they finally confront the corrupted King Mortannis.",
+            "United with the rebellious forces of the city, the party attempts to break the king's malevolent corruption and restore peace to the Kingdom of Valeria.",
+            "The decision made during this decisive confrontation will shape the future of Valeria for generations to come.",
+            "Will they succeed in breaking the darkness that grips the king and restore peace and harmony to the realm, or will the shadows prevail and consume the kingdom entirely?"
+        ]
+    },
+    {
+        "campaignId": "echoes",
+        "sessionNumber": 7,
+        "title": "DnD Session 7: Into the Shadowfell",
+        "imageSrc": "/dnd/session/Session_7_Background.jpg",
+        "description": [
+            "As the party steps into a mysterious, dark, and gloomy realm, an unsettling aura surrounds them.",
+            "In the distance, their eyes are drawn to a foreboding floating island that seems to beckon them toward exploration.",
+            "Eager to unveil its secrets, the adventurers begin their journey, but they must tread carefully in this unfamiliar and dangerous land.",
+            "Haunting shadows loom around them and eerie whispers drift through the air, hinting at the many lurking dangers that could threaten their very existence.",
+            "Their quest for knowledge in this shadowy domain will test their courage and unity as they confront the unknown and uncover the mysteries of the island."
+        ]
+    },
+    {
+        "campaignId": "echoes",
+        "sessionNumber": 8,
+        "title": "DnD Session 8: Darkness Revealed",
+        "imageSrc": "/dnd/session/Session_8_Background.jpg",
+        "description": [
+            "Returning to the town of Valeria, the party's triumph over Vespera's powerful ally echoes across the shattered floating island, now severed from the Shadowfell's grip.",
+            "Whispers soon spread of an awakened dragon in Emberhold, but before the party can pursue answers, the night erupts into chaos as familiar vampiric bat-like creatures launch a frenzied assault.",
+            "Amid the turmoil, several mysteries begin to intertwine—the origins of these creatures, the truth behind the enigmatic dragon of Emberhold, and the beckoning secrets hidden within Hominod's arcane library.",
+            "These unanswered questions burn within the party, promising discoveries that may soon quench their thirst for the truth."
+        ]
+    },
+    {
+        "campaignId": "echoes",
+        "sessionNumber": 9,
+        "title": "DnD Session 9: Scorching Strength",
+        "imageSrc": "/dnd/session/Session_9_background.jpg",
+        "description": [
+            "After defeating the vampiric bat-like creatures, the party soon faced new trouble when one of the surviving monsters attempted to abduct Zeldris and drag him toward a mysterious desert temple.",
+            "Zeldris managed to escape the creature's grasp and fled into a dangerous cave infested with deadly scorpions, where he hid while the rest of the party searched for him.",
+            "Determined to rescue their ally, the party quickly assembled a Valerian caravan and set out across the scorching Searing Sands.",
+            "Their journey took a disastrous turn when they encountered a colossal white wyrm trail and a violent sandstorm that destroyed their caravan entirely.",
+            "After a perilous journey on foot through the unforgiving desert, the party finally rescued Zeldris and discovered a map hinting at a powerful artifact hidden somewhere within Emberhold.",
+            "Continuing their travels south, they arrived at the small desert village of Sunhaven, where the snake-like inhabitants who guarded the dragon Emberax were slain during the confrontation.",
+            "After taking control of the settlement, the party renamed the village \"The Citadel of Dragon Slaying and Shenanigans.\"",
+            "Although the fortress now lies under their control, its location near Emberhold and the harsh edge of the Searing Sands means it may never truly be safe.",
+            "With their new stronghold established, the party begins preparing the citadel for the battles that will surely come."
+        ]
+    },
+    {
+        "campaignId": "echoes",
+        "sessionNumber": 10,
+        "title": "DnD Session 10: The Dragon Slayers",
+        "imageSrc": "/dnd/session/Session_10_Background.jpg",
+        "description": [
+            "After diligently upgrading their desert base, now known as \"The Citadel of Dragon Slaying and Shenanigans,\" the party set their sights on the heart of Emberhold, the dreaded lair of the dragon Emberax.",
+            "Armed with Bjorn and Finn's newly constructed tank, Zyvan and Zeldris's invisible net, and a series of emergency hiding tunnels carved into the iron mine, the party believed themselves fully prepared.",
+            "Within Emberhold, Finn managed to slip away with a red dragon egg while the party gathered Emberax's rare and valuable kush herbs.",
+            "Their success quickly turned dangerous when Zeldris snatched a mysterious ring from the edge of a volcanic pit, triggering a violent eruption that awakened the slumbering dragon Emberax.",
+            "To make matters worse, familiar enemies from the Coven now block the only escape at the entrance to Emberhold.",
+            "What began as a daring heist now threatens to become a fiery disaster, as Emberax's wrath looms over the party and the lives of everyone trapped within the cavern."
+        ]
+    },
+    {
+        "campaignId": "echoes",
+        "sessionNumber": 11,
+        "title": "DnD Session 11: The Finale",
+        "imageSrc": "/dnd/session/Session_11_Background.jpg",
+        "description": [
+            "With the dragon finally slain and their desert fortress fully fortified, the party stands stronger than ever before.",
+            "Soon after their victory, the newly crowned King Lucius approaches them with a desperate plea for aid.",
+            "During their absence, the Kingdom of Valeria has fallen under the control of the sinister Coven of Eternal Night.",
+            "Knowing that Malachi is responsible for the kingdom's downfall, the party prepares to return to Valeria once more.",
+            "There, they will face Malachi in one final climactic battle that will decide the fate of the kingdom."
+        ]
+    }
+
+]

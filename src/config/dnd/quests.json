@@ -1,65 +1,63 @@
 [
     {
-      "id": "placeholder-quest-1",
-      "title": "Placeholder Quest Alpha",
-      "campaign": "TBD Campaign",
+      "id": "save_mushrooms",
+      "title": "Save the Myconids",
+      "campaignId": "echoes",
   
-      "completed": false,
+      "hidden": false,
   
-      "objective": "This is a placeholder objective used for testing the quest system.",
+      "objective": "Defeat Gerbo and his stronghold.",
   
-      "summary": "This quest exists only as a development placeholder. It will be replaced with an actual quest later.",
+      "summary": "Some of the myconid people have given their life to Zyvan and Zeldris. This is so that they can defeat the mercenaries from hurting their people in the underdark.",
   
-      "rewards": [
-        "Placeholder reward",
-        "Debug loot"
-      ],
+      "rewards": [],
   
-      "notes": [
-        "Remove before final release",
-        "Used only for layout testing"
+      "notes": [],
+
+      "dm_notes": [
+        "reward is 250k gold"
       ]
     },
     {
-      "id": "placeholder-quest-2",
-      "title": "Placeholder Quest Beta",
-      "campaign": "TBD Campaign",
+      "id": "gerbo_helm",
+      "title": "Mytical Helmet Retrieval",
+      "campaignId": "echoes",
+      
+      "hidden": false,
   
-      "completed": false,
+      "objective": "Retrieve a mythical helmet held by King Bruenor of Jarnulfrhöfuð.",
   
-      "objective": "Temporary objective used to test filtering, sorting, and UI layout.",
-  
-      "summary": "A completely fake quest designed only to populate the quest list during development.",
+      "summary": "Gerbo asked Zyvan to retrieve a mythical helmet from Jarnulfrhöfuð. This helmet is held by King Bruenor, and it is known that he keeps it held in a safe place.",
   
       "rewards": [
-        "Temporary reward",
-        "Placeholder gold"
+        "A gold amount known to Zyvan"
       ],
   
       "notes": [
-        "Testing quest card layout",
-        "Safe to delete anytime"
+        "This guy who offered the quest was very rude to Zyvan >:("
+      ],
+
+      "dm_notes": [
+        "reward is 250k gold"
       ]
     },
     {
-      "id": "placeholder-quest-3",
-      "title": "Placeholder Quest Gamma",
-      "campaign": "TBD Campaign",
+      "id": "clear_name",
+      "title": "Reclaim Reputation",
+      "campaignId": "echoes",
   
-      "completed": false,
+      "hidden": false,
   
-      "objective": "Fake objective for development purposes only.",
+      "objective": "Prove to King Lucius that you are not evil.",
   
-      "summary": "This placeholder helps test how high-priority quests appear in the UI.",
+      "summary": "The council of the Elder Tree has seen propaganda that the Shadow Merchant Money Gang are ruthless evil tryants of the Elandria. King Lucius trusts the gang and is willing to give you a chance to prove your innocence.",
   
       "rewards": [
-        "Fake artifact",
-        "Development XP"
+        "Reputation of the Shadow Merchant Money Gang restored"
       ],
   
-      "notes": [
-        "Used to test priority styling",
-        "Not part of the real campaign"
-      ]
+      "notes": [],
+
+      "dm_notes": []
     }
   ]

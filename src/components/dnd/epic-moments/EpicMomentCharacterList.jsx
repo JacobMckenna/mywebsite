@@ -28,9 +28,9 @@ export default function EpicMomentCharacterList({ characters = [] }) {
       >
         {characters.map((character) => {
           const imageSrc =
-            character.tokenSrc ||
             character.portraitSrc ||
             character.fullImageSrc ||
+            character.tokenSrc ||
             null;
 
           return (

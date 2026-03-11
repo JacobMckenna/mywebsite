@@ -40,13 +40,13 @@
             "Intrigued by strange noises and reports of unusual occurrences in the forest, the party spoke with Griswold about what had been happening in the area.",
             "Griswold shared his concerns and spoke of his missing brother, Malachi, a secretive wizard rumored to have been dabbling in dark magic.",
             "Following these clues deeper into Evergreen Hollow, the party discovered forgotten ruins and whispers of a long-lost group of ancient heroes and the power they once possessed.",
-            "With these revelations, the party’s destiny began to unfold as they prepared to face the challenges ahead and uncover the ancient secrets waiting in the shadows."
+            "With these revelations, the party's destiny began to unfold as they prepared to face the challenges ahead and uncover the ancient secrets waiting in the shadows."
         ]
     },
     {
         "campaignId": "echoes",
         "sessionNumber": 3,
-        "title": "DnD Session 3: Gone with Gold",
+        "title": "Gone with Gold",
         "imageSrc": "/dnd/session/Session_3_Background.jpg",
         "description": [
             "The party's daring gambit begins as corruption tightens its grip on the grand city of Valeria.",
@@ -59,7 +59,7 @@
     {
         "campaignId": "echoes",
         "sessionNumber": 4,
-        "title": "DnD Session 4: The Uprising",
+        "title": "The Uprising",
         "imageSrc": "/dnd/session/Session_4_Background.jpg",
         "description": [
             "Inside the long-awaited Palace Vault, the party is ambushed by a deadly assassin shortly after their encounter with the malicious Malachi.",
@@ -73,7 +73,7 @@
     {
         "campaignId": "echoes",
         "sessionNumber": 5,
-        "title": "DnD Session 5: Flames of Fury",
+        "title": "Flames of Fury",
         "imageSrc": "/dnd/session/Session_5_Background.jpg",
         "description": [
             "After successfully infiltrating the Coven of Eternal Night's stronghold within the Tomb of Shadows, the party emerges victorious with the stolen Arcane Crown.",
@@ -86,7 +86,7 @@
     {
         "campaignId": "echoes",
         "sessionNumber": 6,
-        "title": "DnD Session 6: Battle for the Throne",
+        "title": "Battle for the Throne",
         "imageSrc": "/dnd/session/Session_6_background.png",
         "description": [
             "Within the rotten walls of Valeria, the party takes command of the rebellion, guided by Prince Lucius, fighting alongside Ragnar, and empowered by the Arcane Crown.",
@@ -99,7 +99,7 @@
     {
         "campaignId": "echoes",
         "sessionNumber": 7,
-        "title": "DnD Session 7: Into the Shadowfell",
+        "title": "Into the Shadowfell",
         "imageSrc": "/dnd/session/Session_7_Background.jpg",
         "description": [
             "As the party steps into a mysterious, dark, and gloomy realm, an unsettling aura surrounds them.",
@@ -112,7 +112,7 @@
     {
         "campaignId": "echoes",
         "sessionNumber": 8,
-        "title": "DnD Session 8: Darkness Revealed",
+        "title": "Darkness Revealed",
         "imageSrc": "/dnd/session/Session_8_Background.jpg",
         "description": [
             "Returning to the town of Valeria, the party's triumph over Vespera's powerful ally echoes across the shattered floating island, now severed from the Shadowfell's grip.",
@@ -124,7 +124,7 @@
     {
         "campaignId": "echoes",
         "sessionNumber": 9,
-        "title": "DnD Session 9: Scorching Strength",
+        "title": "Scorching Strength",
         "imageSrc": "/dnd/session/Session_9_background.jpg",
         "description": [
             "After defeating the vampiric bat-like creatures, the party soon faced new trouble when one of the surviving monsters attempted to abduct Zeldris and drag him toward a mysterious desert temple.",
@@ -141,7 +141,7 @@
     {
         "campaignId": "echoes",
         "sessionNumber": 10,
-        "title": "DnD Session 10: The Dragon Slayers",
+        "title": "The Dragon Slayers",
         "imageSrc": "/dnd/session/Session_10_Background.jpg",
         "description": [
             "After diligently upgrading their desert base, now known as \"The Citadel of Dragon Slaying and Shenanigans,\" the party set their sights on the heart of Emberhold, the dreaded lair of the dragon Emberax.",
@@ -155,7 +155,7 @@
     {
         "campaignId": "echoes",
         "sessionNumber": 11,
-        "title": "DnD Session 11: The Finale",
+        "title": "The Battle of Valeria",
         "imageSrc": "/dnd/session/Session_11_Background.jpg",
         "description": [
             "With the dragon finally slain and their desert fortress fully fortified, the party stands stronger than ever before.",
@@ -163,6 +163,321 @@
             "During their absence, the Kingdom of Valeria has fallen under the control of the sinister Coven of Eternal Night.",
             "Knowing that Malachi is responsible for the kingdom's downfall, the party prepares to return to Valeria once more.",
             "There, they will face Malachi in one final climactic battle that will decide the fate of the kingdom."
+        ]
+    }
+
+
+    ,
+    {
+        "campaignId": "echoes",
+        "sessionNumber": 12,
+        "title": "Whispers of the Past, Shadows of the Present",
+        "imageSrc": "/dnd/session/Session_12_Background.jpg",
+        "description": [
+            "In a climactic battle, the party valiantly defeated the malevolent Malachi, crushing the grasp of his dark influence that had plagued the realm.",
+            "Soon after, they thwarted Vespera's mysterious spell, preventing its potential destructive force from being unleashed upon the land.",
+            "However, a desperate and vengeful Vespera conjured a powerful magical vortex, immediately engulfing Finn and Zarathustra.",
+            "In a moment of solidarity and without hesitation, the remaining members of the party leaped into the vortex.",
+            "Their perception of reality twisted and contorted in what seemed like mere heartbeats as they were whisked away to an eerily familiar realm."
+        ]
+    },
+    {
+        "campaignId": "echoes",
+        "sessionNumber": 13,
+        "title": "The Temples of Sorrow",
+        "imageSrc": "/dnd/session/Session_13_Background.jpg",
+        "description": [
+            "Having persevered through the treacherous depths of the Shadowfell, the party now stands at the entrance of the daunting Temple of Sorrows.",
+            "Their path to this point has been riddled with relentless battles against an array of dark creatures that haunt this realm, each encounter testing their mettle.",
+            "Ragnar, their loyal companion, now bears the weight of 39 additional years.",
+            "It is clear that the corruption of the realm is not a fortunate place to live.",
+            "Undeterred by the terrors they have faced, the party's resolve remains firm as they prepare to enter the temple.",
+            "They are driven by the unwavering hope of finding a portal within its depths that could lead them back to the material plane and reunite them with their missing friend, Finnigan Fairweather."
+        ]
+    },
+    {
+        "campaignId": "echoes",
+        "sessionNumber": 14,
+        "title": "The Tragedy of Griswold",
+        "imageSrc": "/dnd/session/Session_14_Background.jpg",
+        "description": [
+            "The party, divided in approach, navigated the perilous depths of the Temple of Sorrows.",
+            "Ic's finesse guided their progress through intricate passages, while Bjorn's brute strength inadvertently triggered a catastrophic collapse, bringing the ancient structure tumbling down in a deafening cacophony.",
+            "Amid this chaos, Zeldris and Ælendor formed an unexpected bond, inadvertently unleashing an otherworldly entity onto the material plane.",
+            "Escaping the temple's destruction, the party sought refuge at the newly innovated Citadel.",
+            "They were quickly greeted by Finn's aged arrival as he swooped in on the albino dragon, Princess Steve.",
+            "Their reunion was short-lived as Griswold's sudden demise left the party stunned when he exploded, coating the area in green blood.",
+            "Amidst the wreckage, a torn map with cryptic 'X's around Aerthos emerges as their sole clue.",
+            "It may be the key to unraveling the tragic events surrounding Griswold's untimely end."
+        ]
+    },
+
+    {
+        "campaignId": "echoes",
+        "sessionNumber": 17,
+        "title": "Ascendancy",
+        "imageSrc": "/dnd/session/Session_17_Background.png",
+        "description": [
+            "As the party narrows ever closer to the floating island called Aerthos, they are stopped as a large bridge stands in their path.",
+            "Could this bridge mark the defeat of our heroes?",
+            "What awaits our heroes in Aerthos?",
+            "Find out next time... on D, and, D."
+        ]
+    },
+    {
+        "campaignId": "echoes",
+        "sessionNumber": 18,
+        "title": "Into to the Arctic Abyss",
+        "imageSrc": "/dnd/session/Session_18_Background.png",
+        "description": [
+            "Embarking through a mystical portal atop a colossal bridge, the party entered Aerthos.",
+            "Confronted with trials, they emerged triumphant and earned passage.",
+            "Amidst dragon statues and ancient ruins, they ascended into the heights of Aerthos.",
+            "There they encountered elemental guardians—Tesla, Vexus, Glacius, and Azar—and delved deeper into the island's mysteries.",
+            "Unveiling the secrets of a hidden portal, they discovered the Order of Ancients and a sealed gate promising immense wealth and power.",
+            "Returning through the passage, they emerged into a vast ice-laden cavern.",
+            "Confronted by a terrifying ice hydra, the party battled fiercely and emerged victorious.",
+            "Pressing onward into the mountains, they traversed the towering frozen peaks.",
+            "There they discovered an abandoned village of frozen automatons, silent and still, yet clearly holding untold secrets.",
+            "With curiosity ablaze, the party forged ahead, determined to unravel the mysteries hidden within."
+        ]
+    },
+    {
+        "campaignId": "echoes",
+        "sessionNumber": 19,
+        "title": "Friend or Foe?",
+        "imageSrc": "/dnd/session/Session_19_Background.png",
+        "description": [
+            "In the last session, the party attempted to hatch a cold dragon egg but ultimately failed.",
+            "During this time, their companions Finnegan Fairweather and Björn Asulf departed on separate paths.",
+            "Finnegan flew off into the sunset with Princess Steve, while Björn stayed behind to revive a frozen settlement.",
+            "Undeterred by their losses, the remaining adventurers explored Talon Crest Peak.",
+            "There they encountered a desolate village and discovered a chest hinting at forgotten treasures.",
+            "Near a lightning dragon egg, the party was ambushed but quickly adapted to the danger.",
+            "Through clever teamwork, Zeldris transformed Zarathustra into a roc, allowing the party to defeat the dragon.",
+            "After claiming the dragon egg and meeting the mysterious Zichard Morty, they continued their journey through the snow.",
+            "Braving a violent storm, they eventually took shelter in a cave.",
+            "Inside, they encountered three mysterious figures whose intentions remain unknown."
+        ]
+    },
+    {
+        "campaignId": "echoes",
+        "sessionNumber": 20,
+        "title": "A New Connection",
+        "imageSrc": "/dnd/session/Session_20_Background.png",
+        "description": [
+            "Seeking refuge from the cold blizzard, the party entered a small ice tunnel.",
+            "Inside, they encountered two mercenaries known as Silencer and Grim.",
+            "Alongside the mercenaries, they also met a mysterious prisoner named Zarnak.",
+            "Combat quickly erupted as the party fought to free the captive.",
+            "Zyvan performed expert crawling maneuvers, Zeldris unleashed chaotic dancing magic, and Zarathustra delivered the final decisive blow.",
+            "With the mercenaries defeated, Zarnak the prisoner was finally freed.",
+            "The fallen mercenaries were soon repurposed as fuel for a warm campfire, allowing the party to rest.",
+            "Now joined by their new ally Zarnak, the party was offered powerful connections and equipment if they agreed to follow him into the Underdark.",
+            "However, with only a week remaining to locate the tower in the ice lake, the party must decide their next course of action.",
+            "They must also determine whether their new ally is truly someone they can trust."
+        ]
+    },
+    {
+        "campaignId": "echoes",
+        "sessionNumber": 21,
+        "title": "Death of Kilrogg",
+        "imageSrc": "/dnd/session/Session_21_Background.png",
+        "description": [
+            "As the party emerges from the tunnel through the Vronti Mountains, they are swiftly led by Zarathustra to his meditation site at the top of the 1000-step staircase.",
+            "There, the party faces a true test of skill as they complete a demanding obstacle course.",
+            "They scale massive statues and even cross a tightrope high above the ground.",
+            "During their time there, they learn of the powerful 'Zen Tree,' a mystical tree with strong restorative properties.",
+            "After leaving the meditation site, the party encounters a roadblock when an encampment of orcs blocks their path westward.",
+            "Agreeing that the orcs must die for their rudeness, the party launches a brutal assault.",
+            "One by one, the orcs fall to arrows, fire, mutilation, and freezing magic.",
+            "In the end, the party slays them all, including their undying leader Kilrogg.",
+            "With the battle finished, the freed prisoners begin to depart.",
+            "Before leaving, they offer the party a gift as a sign of their gratitude."
+        ]
+    },
+    {
+        "campaignId": "echoes",
+        "sessionNumber": 22,
+        "title": "Lizardfolk Troubles",
+        "imageSrc": "/dnd/session/Session_22_Background.png",
+        "description": [
+            "As the party emerges from the aftermath of the devastated Orc Camp, they are presented with a strange gift from the freed peasant prisoners.",
+            "The gift is a skull with unusual properties, its crystal eye occasionally glowing a deep red.",
+            "Following Zarathustra's adventurous promise, the party travels to the town of Port Seal.",
+            "There, they quickly discover the devastating effects the Orc Camp had inflicted upon the settlement.",
+            "Zeldris and Zyvan work swiftly to heal many of the wounded soldiers scattered throughout the town.",
+            "The party informs the town's leader, Thelric, of the orc camp's downfall.",
+            "Though initially distrustful of their claims, Thelric eventually allows the party a place to stay for the night.",
+            "Soon after, Bjorn arrives in spectacular fashion with his massive tank, leaving a trail of destruction behind him.",
+            "The following morning, the party awakens to find the nearby lizardfolk have grown aggressive.",
+            "With the intimidating presence of Bjorn's tank and promises of freedom, the situation is eventually calmed.",
+            "Now, adventure awaits."
+        ]
+    },
+    {
+        "campaignId": "echoes",
+        "sessionNumber": 23,
+        "title": "The Future of Port Seal",
+        "imageSrc": "/dnd/session/Session_23_Background.png",
+        "description": [
+            "[INSERT CRAZY AWESOME RECAP + SPOILERS HERE]"
+        ]
+    },
+    {
+        "campaignId": "echoes",
+        "sessionNumber": 24,
+        "title": "Expect the Unexpected",
+        "imageSrc": "/dnd/session/Session_24_Background.png",
+        "description": [
+            "As the party set out toward the Haven Mines, a fallen tree and strange pale vapour suddenly blocked their path.",
+            "It was an ambush.",
+            "Unfortunately for the attackers, the party had the favor of RNG JESUS.",
+            "Blessed by the dice gods, the party seemed incapable of rolling anything less than a natural 20.",
+            "The ambushers were swiftly and brutally defeated.",
+            "During the chaos, Zyvan managed to befriend a treant who now eagerly follows the party in search of sunshine.",
+            "Yet many questions remain unanswered.",
+            "Why were they ambushed?",
+            "Why were people being dragged away?",
+            "And perhaps most importantly, why wasn't RNG JESUS on the ambushers' side?",
+            "Find out next time, on Dungeons... and... Dragons."
+        ]
+    },
+    {
+        "campaignId": "echoes",
+        "sessionNumber": 25,
+        "title": "Where are we?",
+        "imageSrc": "/dnd/session/Session_25_Background.png",
+        "description": [
+            "After meeting Inanala the druid, the party soon realizes her malicious goal of harming Thelric.",
+            "She demands that the party bring her Thelric's head.",
+            "As Zyvan raises the axe, several attempts are made to save Thelric.",
+            "At the final moment, Zyvan brings the axe down beside Thelric's head.",
+            "Suddenly, with a loud poof, Thelric vanishes.",
+            "Seeing this, Zeldris quickly casts teleport on the group.",
+            "Unfortunately, Bjorn is too far away and is left behind.",
+            "Zeldris attempts to teleport the group to the Elder Tree, but the spell backfires.",
+            "Instead, the party is transported to a mysterious town.",
+            "There, they meet Zeldris's father for the very first time."
+        ]
+    },
+    {
+        "campaignId": "echoes",
+        "sessionNumber": 26,
+        "title": "Patrick and the Grand Library",
+        "imageSrc": "/dnd/session/Session_2_Background.png",
+        "description": [
+            "After the party's teleport fails, they find themselves in an unfamiliar town.",
+            "All except Zeldris, who knows exactly where they are.",
+            "They are greeted by Zeldris's father, who welcomes the party and introduces them to Zeldris's brother.",
+            "Soon after, the party is warned about the approaching dwarven army.",
+            "No one knows exactly when the army will arrive, but it will almost certainly bring battle.",
+            "The party then enters the grand library.",
+            "Inside, they discover Weedszard, who has taken up the job of guarding the library for a bit of spare coin.",
+            "As they explore, they notice several strange occurrences happening throughout the town.",
+            "These events eventually lead them to someone named Patrick.",
+            "As the party searches through the vast knowledge within the library, many secrets still remain hidden.",
+            "What they will uncover next remains a mystery."
+        ]
+    },
+    {
+        "campaignId": "echoes",
+        "sessionNumber": 29,
+        "title": "The Dwarves Approach",
+        "imageSrc": "/dnd/session/Session_29_Background.png",
+        "description": [
+            "As Zyvan delivers the killing blow to the final monstrous beast in Lugki's arena, the party is infused with a fragment of Lugki's soul.",
+            "This grants Zyvan, Zarathustra, and Zeldris the power to cast one Wish spell each, provided they win a coin flip.",
+            "Soon after, the party awakens once more in the same burning building where they previously began.",
+            "The sun is still rising at the break of dawn, exactly as they had left it.",
+            "Not long after, warnings spread throughout the town that the dwarves are approaching.",
+            "The town of Hominod prepares itself for an all-out battle.",
+            "It is likely that the streets of Hominod will soon be bathed in blood.",
+            "The only question is whose."
+        ]
+    },
+    {
+        "campaignId": "echoes",
+        "sessionNumber": 32,
+        "title": "A New Hominod",
+        "imageSrc": "/dnd/session/Session_32_Background.png",
+        "description": [
+            "The party spends most of the session repairing Hominod and restoring their own abilities.",
+            "Bjorn begins the reconstruction of his powerful tank.",
+            "Zyvan regrows many of the plants and fallen trees that were destroyed.",
+            "Zeldris creates a new pocket demiplane containing copies of everyone.",
+            "Zarathustra aids the others, assisting in each of their tasks and missions.",
+            "Soon, Hominod will be fully repaired.",
+            "After that, the story of the Shadow Merchant Money Gang will finally begin to unfold."
+        ]
+    },
+    {
+        "campaignId": "echoes",
+        "sessionNumber": 36,
+        "title": "Into the Underdark",
+        "imageSrc": "/dnd/session/Session_36_Background.png",
+        "description": [
+            "As Zeldris and Zyvan leave Bjorn behind, they follow Zarnak down the Elder Tree.",
+            "Zarnak promises to lead them to Vespera and into the depths of the Underdark.",
+            "Yet much mystery surrounds this journey.",
+            "Can Zarnak truly be trusted?",
+            "Is he really guiding them to the Underdark?",
+            "Or are Zeldris and Zyvan unknowingly walking toward their own demise?",
+            "These questions will be answered as their travels continue this session."
+        ]
+    },
+    {
+        "campaignId": "echoes",
+        "sessionNumber": 40,
+        "title": "WE'RE SO BACK LFG!!!!🔥🔥🔥",
+        "imageSrc": "/dnd/session/Session_40_Background.png",
+        "description": [
+            "All of a sudden... poof! Zeldris and Zyvan teleport back into existence with the rest of the party.",
+            "At that very moment, the Valerian Palace begins to crumble down to the floor below.",
+            "This chaos unfolds shortly after the Valerian Marshal and Tyrant Thorain of the Dwarven District is blown apart by sixteen explosive rounds from Bjorn's kamikaze attack.",
+            "Bjorn miraculously survives the blast thanks to the power of the ring he is wearing.",
+            "Unfortunately, Barreldris Part 2 is too close to the explosion and is swiftly incinerated.",
+            "With the death of the Dwarven District's leader and the destruction unleashed upon the district officials, a massive power vacuum now exists.",
+            "The question for this session is who, if anyone, will rise to claim that power."
+        ]
+    },
+    {
+        "campaignId": "echoes",
+        "sessionNumber": 41,
+        "title": "Bloody Visions",
+        "imageSrc": "/dnd/session/Session_41_Background.png",
+        "description": [
+            "After the explosion in the Valerian Palace and nearly mistaking Zarathustra for a doppelganger, Barreldris is discovered reduced to charcoal.",
+            "King Lucius is quickly escorted away to the Church for safety.",
+            "Bjorn also breaks one of his teeth and replaces it with a tooth taken from Bloodric.",
+            "Soon after, the party discovers a trail of blood leading to a deeply concerning magic circle.",
+            "With Bloodric at their side, they experience a disturbing vision of a massive blood beacon blazing over Valeria while swarms of Alukah scream across the sky.",
+            "Zyvan and Bjorn decide to investigate further and soon uncover that the Elven leader is actually Felton the shapeshifter.",
+            "The guard responsible is sent to the Church prison, and the pair receive rewards for uncovering the deception.",
+            "They also purchase one hundred bombs and an epic potion.",
+            "Meanwhile, Zeldris and Zarathustra visit the magic shop where Zarathustra is caught attempting to shoplift.",
+            "Fortunately, they manage to talk their way out of trouble.",
+            "Zeldris also requests that Barreldris's items be repaired within eight hours.",
+            "This is only the beginning."
+        ]
+    },
+    {
+        "campaignId": "echoes",
+        "sessionNumber": 42,
+        "title": "Approaching Alukah Attack",
+        "imageSrc": "/dnd/session/Session_42_Background.png",
+        "description": [
+            "The party reunites and investigates the mysterious blood circle further.",
+            "They discover it has formed into a growing pillar that begins piercing through the roof of the building.",
+            "In a bold move, the party throws Bloodric into the pillar.",
+            "This destabilizes the magic and causes the structure to erupt into a massive blood beacon.",
+            "The beacon pierces into the clouds above, corrupting them and causing dark red vapours to rain down over the city.",
+            "Both the commoners and Zarathustra inhale the vapours.",
+            "Zarathustra remains unaffected, but the commoners and Dragonborn guards become violently aggressive and grow two to four times their normal size.",
+            "The party is forced to fight and defeat the corrupted commoners before rushing to secure the Church alongside King Lucius.",
+            "To protect him, they give King Lucius a potion of gaseous form and he disappears in a puff of smoke.",
+            "The party defeats the remaining Dragonborn warriors guarding the area.",
+            "However, several of them manage to escape through the magic shop."
         ]
     }
 

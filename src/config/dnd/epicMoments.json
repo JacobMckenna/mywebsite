@@ -1,26 +1,26 @@
 [
     {
-      "id": "elder-tree-last-stand",
+      "id": "eric-well",
       "campaignId": "adventure",
-      "title": "The Last Stand at the Elder Tree",
-      "imageSrc": "/dnd/epic-moments/elder-tree-last-stand.png",
-      "description": "As the sky cracked with necrotic lightning, the party held the line beneath the Elder Tree. Steel, spellfire, and divine wrath collided in a battle that would be remembered across Valeria.",
-      "characterIds": ["zarathustra", "zyvan"]
+      "title": "Scott Pissing in a Well",
+      "imageSrc": "/dnd/epic-moments/eric_well.png",
+      "description": "During the first session, Scott found a well, and decided to piss in it.",
+      "characterIds": ["scott"]
     },
     {
-      "id": "siege-of-the-dwarven-gate",
-      "campaignId": "echoes",
-      "title": "Siege of the Dwarven Gate",
-      "imageSrc": "/dnd/epic-moments/siege-of-the-dwarven-gate.png",
-      "description": "With the gates splintering and the war drums shaking the stone, the defenders made their stand in a desperate clash against overwhelming force.",
-      "characterIds": ["zarathustra"]
+      "id": "klayis-kills-king",
+      "campaignId": "adventure",
+      "title": "Klayis Kills King Matthias",
+      "imageSrc": "/dnd/epic-moments/klayis_kills_king.png",
+      "description": "Klayis slashes with his greatsword with one decisive slash he strikes down King Matthias in a mission that was thought to be impossible.",
+      "characterIds": ["klayis"]
     },
     {
-      "id": "dragonfall-vow",
+      "id": "marshal-valeria-attack",
       "campaignId": "echoes",
-      "title": "The Dragonfall Vow",
-      "imageSrc": "/dnd/epic-moments/dragonfall-vow.png",
-      "description": "Before the ashes of a ruined battlefield, the heroes swore an oath to bring down every dragon that threatened Elandria, no matter the cost.",
-      "characterIds": ["zyvan"]
+      "title": "Uprising against the Valerian Marshal Landon",
+      "imageSrc": "/dnd/epic-moments/marshal_valaria_attack.png",
+      "description": "There was an uproar led by the party in Valeria where a group of peasents and a barkeeper captured the Marshal Landon, and hung him in the Gallows infront of the Palace.",
+      "characterIds": ["zyvan", "zarathustra", "zeldris", "bjorn"]
     }
   ]

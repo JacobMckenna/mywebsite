@@ -365,7 +365,7 @@
         "campaignId": "echoes",
         "sessionNumber": 26,
         "title": "Patrick and the Grand Library",
-        "imageSrc": "/dnd/session/Session_2_Background.png",
+        "imageSrc": "/dnd/session/Session_26_Background.png",
         "description": [
             "After the party's teleport fails, they find themselves in an unfamiliar town.",
             "All except Zeldris, who knows exactly where they are.",
@@ -378,6 +378,26 @@
             "These events eventually lead them to someone named Patrick.",
             "As the party searches through the vast knowledge within the library, many secrets still remain hidden.",
             "What they will uncover next remains a mystery."
+        ]
+    },
+    {
+        "campaignId": "echoes",
+        "sessionNumber": 27,
+        "title": "Lugki's Arena",
+        "imageSrc": "/dnd/session/Session_27_Background.png",
+        "description": [
+            "The party continues their battle in Lugki's area.",
+            "By now they are around wave 5 where they fight duplicates of themselves.",
+            "Zarathustra has an epic showdown vs himself."
+        ]
+    },
+    {
+        "campaignId": "echoes",
+        "sessionNumber": 28,
+        "title": "Final Boss",
+        "imageSrc": "/dnd/session/Session_28_Background.png",
+        "description": [
+            "By now they are about to fight the final boss of the area, a massive t-rex."
         ]
     },
     {
@@ -398,8 +418,28 @@
     },
     {
         "campaignId": "echoes",
+        "sessionNumber": 30,
+        "title": "Fall of the Library",
+        "imageSrc": "/dnd/session/Session_30_Background.png",
+        "description": [
+            "As the battle for Hominod comes to an end, Felton removes the heart from the grand library",
+            "After this, the library begins to collapse, and although the party beat the dwarves, it came at a cost."
+        ]
+    },
+    {
+        "campaignId": "echoes",
+        "sessionNumber": 31,
+        "title": "Rebuilding Hominod",
+        "imageSrc": "/dnd/session/Session_31_Background.png",
+        "description": [
+            "After the Battle of Hominod, the party spends most of its time repairing the desctruction.",
+            "They also make some very questionable but delicious stew."
+        ]
+    },
+    {
+        "campaignId": "echoes",
         "sessionNumber": 32,
-        "title": "A New Hominod",
+        "title": "Bjorn's New Mine",
         "imageSrc": "/dnd/session/Session_32_Background.png",
         "description": [
             "The party spends most of the session repairing Hominod and restoring their own abilities.",
@@ -409,6 +449,39 @@
             "Zarathustra aids the others, assisting in each of their tasks and missions.",
             "Soon, Hominod will be fully repaired.",
             "After that, the story of the Shadow Merchant Money Gang will finally begin to unfold."
+        ]
+    },
+    {
+        "campaignId": "echoes",
+        "sessionNumber": 33,
+        "title": "Second Orc Camp raid",
+        "imageSrc": "/dnd/session/Session_33_Background.png",
+        "description": [
+            "The party destroys another orc encampment."
+        ]
+    },
+    {
+        "campaignId": "echoes",
+        "sessionNumber": 34,
+        "title": "Trial in the Elder Tree",
+        "imageSrc": "/dnd/session/Session_34_Background.png",
+        "description": [
+            "The party goes to Port Bush where they are split off from Barreldris and Zarathustra.",
+            "The rest go in where they find that they are being portrayed as terrorists in Elandria.",
+            "They agree to go to trial in the Elder Tree where they are forced to speak on a truth stand in a magic field.",
+            "Near the endo of the trial, a group of drow try to assassinate them, along with Zarnak.",
+            "Zarnak surrenders and says that he will bring them to the underdark.",
+            "The party splits once more as Zeldris and Zyvan go to the underdark where Bjorn stays to clear their names."
+        ]
+    },
+    {
+        "campaignId": "echoes",
+        "sessionNumber": 35,
+        "title": "Bjorn's Discussions",
+        "imageSrc": "/dnd/session/Session_35_Background.png",
+        "description": [
+            "Bjorn speaks on his own to the council of the Elder tree.",
+            "Along with other talks, he convinces King Lucius to go with him to Hominod and to Valeria to help prove the innocence of the Shadow Merchant Money Gang."
         ]
     },
     {
@@ -424,6 +497,40 @@
             "Is he really guiding them to the Underdark?",
             "Or are Zeldris and Zyvan unknowingly walking toward their own demise?",
             "These questions will be answered as their travels continue this session."
+        ]
+    },
+    {
+        "campaignId": "echoes",
+        "sessionNumber": 37,
+        "title": "The Lair",
+        "imageSrc": "/dnd/session/Session_37_Background.png",
+        "description": [
+            "Zarnak leaves the party out of the elder tree, and to the underdark but first, Zeldris and Zyvan had to make a pit stop at the orc encampment.",
+            "There, Zeldris almost dies to the Dust of Sneezing and Choking, but Zyvan miraculously saves his life.",
+            "They slaughter all the orcs, and continue on following Zarnak.",
+            "They continue exploring and venture down into the underdark.",
+            "Down there they find Vespera's lair, and get a glimpse of the torment that Bjorn had also found."
+        ]
+    },
+    {
+        "campaignId": "echoes",
+        "sessionNumber": 38,
+        "title": "Reclaiming Reputation",
+        "imageSrc": "/dnd/session/Session_38_Background.png",
+        "description": [
+            "Bjorn finally meets back up with Barreldris and Zarathustra after they got split of during the trial",
+            "They seek out to Hominod and then after to Valeria so that they can clear the name of the Shadow Merchant Money Gang"
+        ]
+    },
+    {
+        "campaignId": "echoes",
+        "sessionNumber": 39,
+        "title": "Nuclear Arrival into Valeria",
+        "imageSrc": "/dnd/session/Session_39_Background.png",
+        "description": [
+            "Bjorn finally meets back up with Barreldris and Zarathustra after they got split of during the trial",
+            "They seek out to Hominod and then after to Valeria so that they can clear the name of the Shadow Merchant Money Gang",
+            "They also find some disguises along the way."
         ]
     },
     {

@@ -1,7 +1,7 @@
 // src/pages/WorldMapPage.jsx
 
 import React from "react";
-import MapViewport from "../../components/world/MapViewport";
+import MapViewport from "../../components/dnd/world/MapViewport";
 import { worldMapData } from "../../lib/dnd/world/worldMapData";
 import { partyState } from "../../lib/dnd/world/partyState";
 import { relatedContent } from "../../lib/dnd/world/relatedContent";

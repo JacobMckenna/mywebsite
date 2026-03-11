@@ -90,7 +90,7 @@ export default function EpicMomentCard({ moment, featured = false }) {
               fontWeight: 700,
             }}
           >
-            {featured ? "Featured Chronicle" : "Legendary Deed"}
+            {featured ? "First Epic Moment" : "Epic Moment"}
           </div>
 
           <h2

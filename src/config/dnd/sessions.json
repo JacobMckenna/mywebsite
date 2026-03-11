@@ -211,7 +211,25 @@
             "It may be the key to unraveling the tragic events surrounding Griswold's untimely end."
         ]
     },
-
+    {
+        "campaignId": "echoes",
+        "sessionNumber": 15,
+        "title": "Bounty Hunting in Valeria",
+        "imageSrc": "/dnd/session/Session_15_Background.jpg",
+        "description": [
+            "The party picks up 3 bounties of criminals around Valeria."
+        ]
+    },
+    {
+        "campaignId": "echoes",
+        "sessionNumber": 16,
+        "title": "Troll to Stone",
+        "imageSrc": "/dnd/session/Session_16_Background.jpg",
+        "description": [
+            "The party ventures down the serpent spine trail and finds a dire troll on the way.",
+            "Aelendor wildshapes into a baselisk and petrified the troll."
+        ]
+    },
     {
         "campaignId": "echoes",
         "sessionNumber": 17,

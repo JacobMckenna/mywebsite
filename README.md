@@ -1,75 +1,173 @@
-# Getting Started with Create React App
+# Personal Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is my personal website, built with React using Create React App. It includes the source code for my portfolio/personal site and can be run locally for development or built for production deployment.
+
+## Project Setup
+
+To run this website locally, you need to have the following installed:
+
+- Git
+- Node.js
+- npm
+
+Node.js includes npm, so installing Node.js should also install npm.
+
+## Cloning the Repository
+
+Open PowerShell or a terminal and run:
+
+```bash
+git clone https://github.com/JacobMckenna/mywebsite.git
+```
+
+Then move into the project folder:
+
+```bash
+cd mywebsite
+```
+
+## Installing Dependencies
+
+Before running the site, install the required project dependencies:
+
+```bash
+npm install
+```
+
+This downloads everything needed for the React app to run locally.
+
+## Running the Website Locally
+
+Start the development server with:
+
+```bash
+npm start
+```
+
+Then open the site in your browser at:
+
+```text
+http://localhost:3000
+```
+
+The page will automatically reload when changes are made to the code.
+
+## Common Setup Issues on Windows
+
+### `git` is not recognized
+
+If you see an error like:
+
+```text
+git : The term 'git' is not recognized
+```
+
+Git is either not installed or is not available in your system PATH.
+
+Install Git for Windows, then close and reopen PowerShell. After installation, confirm Git works by running:
+
+```bash
+git --version
+```
+
+### `npm` is not recognized
+
+If you see an error like:
+
+```text
+npm : The term 'npm' is not recognized
+```
+
+Node.js/npm is either not installed or PowerShell has not refreshed after installation.
+
+Install the Node.js LTS version, then close and reopen PowerShell. Confirm Node and npm are installed by running:
+
+```bash
+node -v
+npm -v
+```
+
+### PowerShell blocks `npm.ps1`
+
+If you see an error like:
+
+```text
+npm.ps1 cannot be loaded because running scripts is disabled on this system
+```
+
+PowerShell is blocking npm scripts because of the execution policy.
+
+Run this command in PowerShell:
+
+```powershell
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+```
+
+When prompted, type:
+
+```text
+Y
+```
+
+Then close and reopen PowerShell.
+
+As a temporary workaround, you can also run npm using:
+
+```bash
+npm.cmd install
+npm.cmd start
+```
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, you can run the following commands.
+
+### `npm install`
+
+Installs all dependencies needed for the project.
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Runs the website in development mode.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Open:
+
+```text
+http://localhost:3000
+```
+
+to view it in your browser.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner in interactive watch mode.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Builds the website for production in the `build` folder.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This creates an optimized version of the site that can be deployed.
 
 ### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+This command exposes the full Create React App configuration.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This is a one-way operation and usually should not be used unless full control over the build setup is needed.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Deployment
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This website is configured for automatic GitHub deployment.
 
-## Learn More
+Changes pushed or merged into the main deployment branch are handled through the workflows and Firebase configuration files included in the project.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Technologies Used
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- React
+- Create React App
+- JavaScript
+- HTML/CSS
+- Firebase/GitHub deployment workflow
 
-## Automatic Github Deployment
+## Notes
 
-This website automatically deploys the master branch on merge / pr / push.
-This does so with the workflows in the .github files and the other firebase files.
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This README is focused on setting up, running, and deploying the personal website locally and through the existing deployment workflow.

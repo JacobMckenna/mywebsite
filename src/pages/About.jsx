@@ -5,6 +5,7 @@ import Footer from "../components/layout/Footer";
 import DotBackground from "../components/layout/DotBackground";
 import { MdOutlineEmail, MdPhoneEnabled } from "react-icons/md";
 import { FaLinkedinIn, FaGithub  } from "react-icons/fa6";
+import config from "../config/config.json";
 
 
 export default function About() {
@@ -20,7 +21,7 @@ export default function About() {
 
 
             <img
-              src={process.env.PUBLIC_URL + "/about-figure.png"}
+              src={process.env.PUBLIC_URL + "/portraits/about-figure.png"}
               alt="Jacob illustration"
               className="
                 block
@@ -92,7 +93,7 @@ export default function About() {
                 {/* Scoot */}
                 <div className="group relative overflow-hidden rounded-xl">
                   <img
-                    src={process.env.PUBLIC_URL + "/cats1.jpg"}
+                    src={process.env.PUBLIC_URL + "/animals/cats1.jpg"}
                     alt="Scoot"
                     className="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-105"
                   />
@@ -108,7 +109,7 @@ export default function About() {
                 {/* Ms Clara */}
                 <div className="group relative overflow-hidden rounded-xl">
                   <img
-                    src={process.env.PUBLIC_URL + "/cats2.jpg"}
+                    src={process.env.PUBLIC_URL + "/animals/cats2.jpg"}
                     alt="Ms Clara"
                     className="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-105"
                   />

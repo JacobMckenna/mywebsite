@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import config from "../config/config.json";
 import {
   IoLocationSharp,
   IoSchoolSharp,
@@ -140,7 +141,7 @@ export default function HeroSection({ tech }) {
         <a
           className="inline-flex items-center gap-2 px-5 sm:px-6 py-3 rounded-xl font-semibold text-sm sm:text-base
                      border border-slate-600 bg-slate-800/50 text-white hover:bg-slate-700/50 transition-all active:scale-[0.98]"
-          href={process.env.PUBLIC_URL + "/Jacob_McKenna_Software_Developer.pdf"}
+          href={process.env.PUBLIC_URL + config.resumeUrl}
           target="_blank"
           rel="noreferrer"
         >
@@ -158,7 +159,7 @@ export default function HeroSection({ tech }) {
         <a
           className="inline-flex items-center gap-2 px-5 py-3 rounded-xl border border-slate-700 bg-slate-800/30 text-slate-200
                      hover:bg-slate-700/50 transition-all active:scale-[0.98]"
-          href="https://github.com/JacobMckenna"
+          href={config.githubUrl}
           target="_blank"
           rel="noreferrer"
         >
@@ -168,7 +169,7 @@ export default function HeroSection({ tech }) {
         <a
           className="inline-flex items-center gap-2 px-5 py-3 rounded-xl border border-slate-700 bg-slate-800/30 text-slate-200
                      hover:bg-slate-700/50 transition-all active:scale-[0.98]"
-          href="https://www.linkedin.com/in/jrjmckenna/"
+          href={config.linkedinUrl}
           target="_blank"
           rel="noreferrer"
         >

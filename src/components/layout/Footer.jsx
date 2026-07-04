@@ -2,6 +2,7 @@ import React from "react";
 import { MdEmail } from "react-icons/md";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { TbBrandGithubFilled } from "react-icons/tb";
+import config from "../../config/config.json";
 
 function Footer() {
   return (
@@ -11,7 +12,7 @@ function Footer() {
         {/* Email */}
         <div className="relative group">
           <a
-            href="mailto:jrjmckenna@outlook.com"
+            href={config.email}
             aria-label="Email"
             className="inline-flex items-center justify-center rounded-full border border-slate-700 bg-slate-800/80 p-2.5 text-slate-200 shadow-lg transition-all hover:border-slate-600 hover:bg-slate-700/80 active:translate-y-0.5"
           >
@@ -26,7 +27,7 @@ function Footer() {
         {/* LinkedIn */}
         <div className="relative group">
           <a
-            href="https://www.linkedin.com/in/jrjmckenna/"
+            href={config.linkedinUrl}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
@@ -43,7 +44,7 @@ function Footer() {
         {/* GitHub */}
         <div className="relative group">
           <a
-            href="https://github.com/JacobMckenna"
+            href={config.githubUrl}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"

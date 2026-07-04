@@ -6,6 +6,7 @@ import TicTacToeAIPage from "./pages/TicTacToeAIPage.jsx";
 import ScrollToTop from "./components/helpers/ScrollToTop.jsx";
 import About from "./pages/About";
 import MortgageSim from "./pages/MortgageSim";
+import BolusCalculator from "./pages/BolusCalculator";
 
 import DnDHome from './pages/dnd/home';
 import EpicMomentsPage from './pages/dnd/epic-moments';
@@ -29,6 +30,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<TicTacToeAIPage />} />
           <Route path="/MortgageSim" element={<MortgageSim />} />
+          <Route path="/bolus" element={<BolusCalculator />} />
+
           <Route path="/DnD" element={<DnDHome />} />
           <Route path="/DnD/home" element={<DnDHome />} />
           <Route path="/DnD/epic" element={<EpicMomentsPage />} />
